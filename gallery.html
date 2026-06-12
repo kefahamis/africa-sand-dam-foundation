@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Africa Sand Dam Foundation</title>
+  <meta name="description" content="Photo gallery from ASDF projects across Kenya's semi-arid regions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/ASDF-high-rez.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar" id="topBar">
+    <div class="top-bar-container">
+      <div class="top-bar-left">
+        <a href="mailto:infor.asdf@gmail.com" class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          infor.asdf@gmail.com
+        </a>
+        <span class="top-bar-sep">|</span>
+        <a href="tel:+254798623130" class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          +254 798 623 130
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-current" id="langToggle">
+            <span class="lang-flag">&#127468;&#127463;</span>
+            <span class="lang-label">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-option active" data-lang="en" data-flag="&#127468;&#127463;" data-label="EN">&#127468;&#127463; English</button>
+            <button class="lang-option" data-lang="fr" data-flag="&#127467;&#127479;" data-label="FR">&#127467;&#127479; Français</button>
+            <button class="lang-option" data-lang="sw" data-flag="&#127472;&#127466;" data-label="SW">&#127472;&#127466; Kiswahili</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <div class="logo-area">
+        <a href="index.html" class="logo-link">
+          <img class="header-logo-img" src="images/ASDF-high-rez.png" alt="Africa Sand Dam Foundation logo" height="52">
+        </a>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="about.html" class="nav-item">About Us</a></li>
+          <li class="nav-dropdown-wrap">
+            <a href="index.html#solutions" class="nav-item dropdown-trigger">Our Solutions <span class="chevron"></span></a>
+            <div class="nav-dropdown">
+              <a href="solution-water-access.html" class="dropdown-item"><span class="dropdown-label">Water Access</span></a>
+              <a href="solution-environmental-conservation.html" class="dropdown-item"><span class="dropdown-label">Environmental Conservation and NRM</span></a>
+              <a href="solution-food-production.html" class="dropdown-item"><span class="dropdown-label">Food Production and Livelihoods</span></a>
+              <a href="solution-hygiene-sanitation.html" class="dropdown-item"><span class="dropdown-label">Hygiene and Sanitation</span></a>
+              <a href="solution-skills-knowledge.html" class="dropdown-item"><span class="dropdown-label">Skills and Knowledge Management</span></a>
+            </div>
+          </li>
+          <li><a href="projects.html" class="nav-item">Our Projects</a></li>
+          <li class="nav-dropdown-wrap">
+            <a href="#" class="nav-item dropdown-trigger active">Media <span class="chevron"></span></a>
+            <div class="nav-dropdown">
+              <a href="blog.html" class="dropdown-item"><span class="dropdown-label"><i class="fa-solid fa-newspaper" style="color:var(--primary-purple);margin-right:8px;width:14px;text-align:center"></i>Blog</span></a>
+              <a href="gallery.html" class="dropdown-item active-child"><span class="dropdown-label"><i class="fa-solid fa-images" style="color:var(--primary-purple);margin-right:8px;width:14px;text-align:center"></i>Gallery</span></a>
+            </div>
+          </li>
+          <li><a href="contact.html" class="nav-item">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="search-trigger" aria-label="Search site">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <div class="donate-banner-wrapper">
+          <a href="contact.html" class="donate-btn"><span>VOLUNTEER</span></a>
+        </div>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Inner Hero -->
+  <section class="inner-hero">
+    <div class="inner-hero-bg" style="background-image:url('images/hero-2.png');"></div>
+    <h1 class="inner-hero-title">Gallery</h1>
+    <p class="inner-hero-breadcrumb"><a href="index.html">Home</a><span>/</span>Media<span>/</span>Gallery</p>
+    <p class="inner-hero-sub">Photos from our projects and communities across Makueni, Machakos and Kitui</p>
+  </section>
+
+  <!-- Gallery Page -->
+  <main class="gallery-page">
+    <div class="gallery-container">
+
+      <!-- Layout toolbar -->
+      <div class="gallery-toolbar">
+
+        <div class="toolbar-group">
+          <span class="toolbar-label">View</span>
+          <div class="toolbar-btns">
+            <button class="toolbar-btn active" id="viewMasonry" title="Masonry"><i class="fa-solid fa-table-cells-large"></i></button>
+            <button class="toolbar-btn" id="viewGrid" title="Uniform Grid"><i class="fa-solid fa-border-all"></i></button>
+            <button class="toolbar-btn" id="viewList" title="List"><i class="fa-solid fa-list"></i></button>
+          </div>
+        </div>
+
+        <div class="toolbar-divider"></div>
+
+        <div class="toolbar-group" id="colGroup">
+          <span class="toolbar-label">Columns</span>
+          <div class="toolbar-btns">
+            <button class="toolbar-btn" data-cols="2" title="2 columns">2</button>
+            <button class="toolbar-btn active" data-cols="3" title="3 columns">3</button>
+            <button class="toolbar-btn" data-cols="4" title="4 columns">4</button>
+          </div>
+        </div>
+
+        <div class="toolbar-divider"></div>
+
+        <div class="toolbar-group">
+          <span class="toolbar-label">Size</span>
+          <div class="toolbar-btns">
+            <button class="toolbar-btn" id="sizeSmall" title="Small"><i class="fa-solid fa-compress"></i></button>
+            <button class="toolbar-btn active" id="sizeMedium" title="Medium"><i class="fa-solid fa-expand-alt"></i></button>
+            <button class="toolbar-btn" id="sizeLarge" title="Large"><i class="fa-solid fa-maximize"></i></button>
+          </div>
+        </div>
+
+        <div class="toolbar-divider"></div>
+
+        <div class="toolbar-count">
+          <i class="fa-solid fa-images"></i>
+          <span id="photoCount">12</span> photos
+        </div>
+
+      </div>
+
+      <!-- Filter bar -->
+      <div class="gallery-filters">
+        <button class="gal-filter active" data-cat="all">
+          <i class="fa-solid fa-border-all"></i> All Photos
+        </button>
+        <button class="gal-filter" data-cat="water">
+          <i class="fa-solid fa-water"></i> Water Access
+        </button>
+        <button class="gal-filter" data-cat="community">
+          <i class="fa-solid fa-people-group"></i> Community
+        </button>
+        <button class="gal-filter" data-cat="environment">
+          <i class="fa-solid fa-leaf"></i> Environment
+        </button>
+        <button class="gal-filter" data-cat="education">
+          <i class="fa-solid fa-school"></i> Education
+        </button>
+        <button class="gal-filter" data-cat="construction">
+          <i class="fa-solid fa-helmet-safety"></i> Construction
+        </button>
+      </div>
+
+      <!-- Masonry grid -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <div class="gal-item" data-cat="water" data-title="Nzaui Sand Dam" data-desc="A 4m-high sand dam in Makueni County capturing 18,000m³ of water per season.">
+          <div class="gal-img-wrap"><img src="images/hero-1.png" alt="Nzaui Sand Dam" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Nzaui Sand Dam</span></div>
+        </div>
+
+        <div class="gal-item tall" data-cat="community" data-title="Community Training Day" data-desc="ASDF volunteers training water committee members in Machakos County.">
+          <div class="gal-img-wrap"><img src="images/hero-2.png" alt="Community Training" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Community Training Day</span></div>
+        </div>
+
+        <div class="gal-item" data-cat="education" data-title="Wote Girls School Tank" data-desc="50,000L rainwater harvesting tank at Wote Girls Secondary School.">
+          <div class="gal-img-wrap"><img src="images/hero-3.png" alt="School Tank" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Wote Girls School Tank</span></div>
+        </div>
+
+        <div class="gal-item wide" data-cat="construction" data-title="Dam Construction — Community Labour" data-desc="240 community members working together to build the Kyuso Sand Dam, Kitui.">
+          <div class="gal-img-wrap"><img src="images/hero-1.png" alt="Dam Construction" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Dam Construction — Community Labour</span></div>
+        </div>
+
+        <div class="gal-item" data-cat="environment" data-title="Tree Planting Drive" data-desc="Community members planting indigenous trees along the Nuu riverbank, Kitui.">
+          <div class="gal-img-wrap"><img src="images/hero-2.png" alt="Tree Planting" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Tree Planting Drive</span></div>
+        </div>
+
+        <div class="gal-item" data-cat="water" data-title="Solar Pipeline Installation" data-desc="Laying the 3km solar-powered pipeline at Kibwezi, Makueni County.">
+          <div class="gal-img-wrap"><img src="images/hero-3.png" alt="Solar Pipeline" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Solar Pipeline Installation</span></div>
+        </div>
+
+        <div class="gal-item tall" data-cat="community" data-title="Women's Water Committee" data-desc="Female-led water committee in Machakos County reviewing management records.">
+          <div class="gal-img-wrap"><img src="images/hero-1.png" alt="Women's Committee" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Women's Water Committee</span></div>
+        </div>
+
+        <div class="gal-item" data-cat="education" data-title="School WASH Block" data-desc="Gender-separated latrine block and handwashing stations at Kathiani Primary School.">
+          <div class="gal-img-wrap"><img src="images/hero-2.png" alt="WASH Block" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>School WASH Block</span></div>
+        </div>
+
+        <div class="gal-item" data-cat="environment" data-title="Rock Catchment — Mutomo" data-desc="Natural granite rock catchment directing seasonal rainfall into lined storage tanks.">
+          <div class="gal-img-wrap"><img src="images/hero-3.png" alt="Rock Catchment" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Rock Catchment — Mutomo</span></div>
+        </div>
+
+        <div class="gal-item wide" data-cat="water" data-title="Masii Sand Dam — Machakos" data-desc="Flagship cascade sand dam serving 1,500 community members in Masii, Machakos.">
+          <div class="gal-img-wrap"><img src="images/hero-1.png" alt="Masii Sand Dam" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Masii Sand Dam — Machakos</span></div>
+        </div>
+
+        <div class="gal-item" data-cat="construction" data-title="Masonry Training" data-desc="ASDF-trained masons learning sand dam construction techniques, Kitui County.">
+          <div class="gal-img-wrap"><img src="images/hero-2.png" alt="Masonry Training" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Masonry Training</span></div>
+        </div>
+
+        <div class="gal-item" data-cat="community" data-title="Community Graduation Day" data-desc="Communities graduating from the ASDF cooperative training programme.">
+          <div class="gal-img-wrap"><img src="images/hero-3.png" alt="Graduation Day" loading="lazy"></div>
+          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Community Graduation Day</span></div>
+        </div>
+
+      </div><!-- /gallery-grid -->
+
+      <!-- Load more -->
+      <div class="gallery-load-more">
+        <button class="load-more-btn" id="loadMoreBtn">
+          <i class="fa-solid fa-images"></i> Load More Photos
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="galLightbox" class="gal-lb-overlay">
+    <div class="gal-lb-backdrop"></div>
+    <div class="gal-lb-modal">
+      <button class="gal-lb-close" id="galLbClose"><i class="fa-solid fa-xmark"></i></button>
+      <button class="gal-lb-arrow gal-lb-prev" id="galLbPrev"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="gal-lb-img-wrap">
+        <img id="galLbImg" src="" alt="">
+        <div class="gal-lb-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i></div>
+      </div>
+      <button class="gal-lb-arrow gal-lb-next" id="galLbNext"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="gal-lb-caption">
+        <h4 id="galLbTitle"></h4>
+        <p id="galLbDesc"></p>
+        <span id="galLbCounter" class="gal-lb-counter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-watermark" aria-hidden="true">ASDF</div>
+    <div class="footer-container">
+      <div class="footer-top-row">
+        <a href="index.html" class="footer-logo-link">
+          <img class="footer-logo-img" src="images/ASDF-high-rez.png" alt="logo" height="52" style="filter:brightness(0) invert(1);">
+        </a>
+        <div class="footer-subscribe">
+          <p class="subscribe-label">Stay updated with our work</p>
+          <form class="subscribe-form" onsubmit="return false;">
+            <input type="email" class="subscribe-input" placeholder="Enter your email address">
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-main-row">
+        <div class="footer-nav-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="projects.html">Our Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#solutions">Our Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h3>Media</h3>
+          <ul class="footer-links">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h3>Contact Us</h3>
+          <ul class="contact-info-list">
+            <li><span>infor.asdf@gmail.com</span></li>
+            <li><span>+254 798 623 130</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-row">
+        <p>&copy; Copyright 2026. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="search.js"></script>
+  <script>
+    // Header / topbar scroll
+    const header = document.getElementById('siteHeader');
+    const topBar = document.getElementById('topBar');
+    window.addEventListener('scroll', () => {
+      const s = window.scrollY > 60;
+      header.classList.toggle('scrolled', s);
+      header.classList.toggle('top-hidden', s);
+      if (topBar) topBar.classList.toggle('hidden', s);
+    });
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav   = document.getElementById('mainNav');
+    if (menuToggle) {
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        mainNav.classList.toggle('active');
+      });
+    }
+    const langToggle   = document.getElementById('langToggle');
+    const langSwitcher = document.getElementById('langSwitcher');
+    if (langToggle) {
+      langToggle.addEventListener('click', e => { e.stopPropagation(); langSwitcher.classList.toggle('open'); });
+      document.addEventListener('click', () => langSwitcher.classList.remove('open'));
+      document.querySelectorAll('.lang-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.lang-option').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          document.querySelector('.lang-flag').textContent = btn.dataset.flag || btn.textContent.split(' ')[0];
+          document.querySelector('.lang-label').textContent = btn.dataset.label;
+          langSwitcher.classList.remove('open');
+        });
+      });
+    }
+
+    // ── Layout toolbar ──
+    const grid = document.getElementById('galleryGrid');
+    let currentView = 'masonry', currentCols = 3, currentSize = 'medium';
+
+    function applyView() {
+      grid.classList.remove('view-grid', 'view-list');
+      if (currentView === 'grid')   grid.classList.add('view-grid');
+      if (currentView === 'list')   grid.classList.add('view-list');
+      // Columns only apply to masonry / grid
+      grid.setAttribute('data-cols', currentCols);
+      grid.style.setProperty('--gal-cols', currentCols);
+      grid.setAttribute('data-size', currentSize);
+    }
+
+    // View buttons
+    document.getElementById('viewMasonry').addEventListener('click', function() {
+      currentView = 'masonry';
+      [this, document.getElementById('viewGrid'), document.getElementById('viewList')].forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      document.getElementById('colGroup').style.opacity = '1';
+      document.getElementById('colGroup').style.pointerEvents = '';
+      applyView();
+    });
+    document.getElementById('viewGrid').addEventListener('click', function() {
+      currentView = 'grid';
+      [document.getElementById('viewMasonry'), this, document.getElementById('viewList')].forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      document.getElementById('colGroup').style.opacity = '1';
+      document.getElementById('colGroup').style.pointerEvents = '';
+      applyView();
+    });
+    document.getElementById('viewList').addEventListener('click', function() {
+      currentView = 'list';
+      [document.getElementById('viewMasonry'), document.getElementById('viewGrid'), this].forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      document.getElementById('colGroup').style.opacity = '0.4';
+      document.getElementById('colGroup').style.pointerEvents = 'none';
+      applyView();
+    });
+
+    // Column buttons
+    document.querySelectorAll('[data-cols]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('[data-cols]').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        currentCols = parseInt(this.dataset.cols);
+        applyView();
+      });
+    });
+
+    // Size buttons
+    document.getElementById('sizeSmall').addEventListener('click', function() {
+      currentSize = 'small';
+      [this, document.getElementById('sizeMedium'), document.getElementById('sizeLarge')].forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      applyView();
+    });
+    document.getElementById('sizeMedium').addEventListener('click', function() {
+      currentSize = 'medium';
+      [document.getElementById('sizeSmall'), this, document.getElementById('sizeLarge')].forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      applyView();
+    });
+    document.getElementById('sizeLarge').addEventListener('click', function() {
+      currentSize = 'large';
+      [document.getElementById('sizeSmall'), document.getElementById('sizeMedium'), this].forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      applyView();
+    });
+
+    applyView(); // apply defaults
+
+    // ── Gallery filter ──
+    const items = [...document.querySelectorAll('.gal-item')];
+    document.querySelectorAll('.gal-filter').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.gal-filter').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.cat;
+        let cnt = 0;
+        items.forEach(item => {
+          const show = cat === 'all' || item.dataset.cat === cat;
+          item.style.display = show ? '' : 'none';
+          if (show) { item.classList.add('gal-appear'); cnt++; }
+        });
+        const pc = document.getElementById('photoCount'); if (pc) pc.textContent = cnt;
+      });
+    });
+
+    // ── Lightbox ──
+    const lb       = document.getElementById('galLightbox');
+    const lbImg    = document.getElementById('galLbImg');
+    const lbTitle  = document.getElementById('galLbTitle');
+    const lbDesc   = document.getElementById('galLbDesc');
+    const lbCount  = document.getElementById('galLbCounter');
+    let visible = [], lbIdx = 0;
+
+    function openLb(idx) {
+      visible = items.filter(i => i.style.display !== 'none');
+      lbIdx   = idx;
+      showLb();
+      lb.classList.add('open');
+      document.body.classList.add('lb-open');
+    }
+
+    function showLb() {
+      const item = visible[lbIdx];
+      if (!item) return;
+      const img = item.querySelector('img');
+      lbImg.style.opacity = '0';
+      lbImg.onload = () => lbImg.style.opacity = '1';
+      lbImg.src   = img.src;
+      lbImg.alt   = img.alt;
+      lbTitle.textContent = item.dataset.title || '';
+      lbDesc.textContent  = item.dataset.desc  || '';
+      lbCount.textContent = `${lbIdx + 1} / ${visible.length}`;
+    }
+
+    function closeLb() { lb.classList.remove('open'); document.body.classList.remove('lb-open'); }
+    function navLb(d)  { lbIdx = (lbIdx + d + visible.length) % visible.length; showLb(); }
+
+    document.getElementById('galLbClose').addEventListener('click', closeLb);
+    lb.querySelector('.gal-lb-backdrop').addEventListener('click', closeLb);
+    document.getElementById('galLbPrev').addEventListener('click', () => navLb(-1));
+    document.getElementById('galLbNext').addEventListener('click', () => navLb(+1));
+    document.addEventListener('keydown', e => {
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'ArrowLeft')  navLb(-1);
+      if (e.key === 'ArrowRight') navLb(+1);
+      if (e.key === 'Escape')     closeLb();
+    });
+
+    items.forEach((item, i) => {
+      item.addEventListener('click', () => openLb(i));
+    });
+
+    // ── Load more (no-op demo) ──
+    document.getElementById('loadMoreBtn').addEventListener('click', function() {
+      this.innerHTML = '<i class="fa-solid fa-check"></i> All Photos Loaded';
+      this.disabled = true;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environmental Conservation & NRM - Africa Sand Dam Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/ASDF-high-rez.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="solutions.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar" id="topBar">
+    <div class="top-bar-container">
+      <div class="top-bar-left">
+        <a href="mailto:infor.asdf@gmail.com" class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          infor.asdf@gmail.com
+        </a>
+        <span class="top-bar-sep">|</span>
+        <a href="tel:+254798623130" class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          +254 798 623 130
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-current" id="langToggle">
+            <span class="lang-flag">&#127468;&#127463;</span>
+            <span class="lang-label">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-option active" data-lang="en" data-flag="&#127468;&#127463;" data-label="EN">&#127468;&#127463; English</button>
+            <button class="lang-option" data-lang="fr" data-flag="&#127467;&#127479;" data-label="FR">&#127467;&#127479; Français</button>
+            <button class="lang-option" data-lang="sw" data-flag="&#127472;&#127466;" data-label="SW">&#127472;&#127466; Kiswahili</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <div class="logo-area">
+        <a href="index.html" class="logo-link">
+          <img class="header-logo-img" src="images/ASDF-high-rez.png" alt="Africa Sand Dam Foundation logo" height="52">
+        </a>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="about.html" class="nav-item">About Us</a></li>
+          <li class="nav-dropdown-wrap">
+            <a href="index.html#solutions" class="nav-item dropdown-trigger active">Our Solutions <span class="chevron"></span></a>
+            <div class="nav-dropdown">
+              <a href="solution-water-access.html" class="dropdown-item"><span class="dropdown-label">Water Access</span></a>
+              <a href="solution-environmental-conservation.html" class="dropdown-item"><span class="dropdown-label">Environmental Conservation and NRM</span></a>
+              <a href="solution-food-production.html" class="dropdown-item"><span class="dropdown-label">Food Production and Livelihoods</span></a>
+              <a href="solution-hygiene-sanitation.html" class="dropdown-item"><span class="dropdown-label">Hygiene and Sanitation</span></a>
+              <a href="solution-skills-knowledge.html" class="dropdown-item"><span class="dropdown-label">Skills and Knowledge Management</span></a>
+            </div>
+          </li>
+          <li><a href="projects.html" class="nav-item">Our Projects</a></li>
+          <li class="nav-dropdown-wrap">
+            <a href="#" class="nav-item dropdown-trigger">Media <span class="chevron"></span></a>
+            <div class="nav-dropdown">
+              <a href="blog.html" class="dropdown-item"><span class="dropdown-label"><i class="fa-solid fa-newspaper" style="color:var(--primary-purple);margin-right:8px;width:14px;text-align:center"></i>Blog</span></a>
+              <a href="gallery.html" class="dropdown-item"><span class="dropdown-label"><i class="fa-solid fa-images" style="color:var(--primary-purple);margin-right:8px;width:14px;text-align:center"></i>Gallery</span></a>
+            </div>
+          </li>
+          <li><a href="contact.html" class="nav-item">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="search-trigger" aria-label="Search site">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <div class="donate-banner-wrapper">
+          <a href="contact.html" class="donate-btn"><span>VOLUNTEER</span></a>
+        </div>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Inner Hero -->
+  <section class="inner-hero">
+    <div class="inner-hero-bg" style="background-image:url('images/hero-2.png');"></div>
+    <h1 class="inner-hero-title">Environmental Conservation & NRM</h1>
+    <p class="inner-hero-breadcrumb">
+      <a href="index.html">Home</a><span>/</span>
+      <a href="index.html#solutions">Our Solutions</a><span>/</span>
+      Environmental Conservation & NRM
+    </p>
+  </section>
+
+  <!-- Solution Content -->
+  <section class="solution-page">
+    <div class="solution-page-container">
+
+      <div class="solution-hero-band">
+        <div class="solution-hero-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 19.34A16 16 0 0 0 8.53 21c4.72-1.81 8.49-5.81 8.49-13z"/><path d="M17 8c0 10-5 13-9 13"/></svg>
+        </div>
+        <div class="solution-hero-text">
+          <h2>Environmental Conservation & NRM</h2>
+          <p>Restoring ecosystems and building climate resilience through nature-based solutions</p>
+        </div>
+      </div>
+
+      <div class="solution-content">
+        <div class="solution-body">
+          <h3>Overview</h3>
+<p>Deforestation and land degradation worsen droughts and reduce the effectiveness of water infrastructure. ASDF's environmental programme works to reverse this trend through large-scale tree planting and natural resource management (NRM).</p>
+<h3>What We Do</h3>
+<p>We plant indigenous trees on hillsides and riverbanks surrounding sand dam catchments. We also train communities on soil conservation, rotational grazing and watershed management.</p>
+<ul>
+  <li>Indigenous tree nurseries and mass planting</li>
+  <li>Hillside terracing and soil bunds</li>
+  <li>Riverbank stabilisation</li>
+  <li>Community-based NRM committees</li>
+  <li>Carbon sequestration monitoring</li>
+</ul>
+<h3>Our Impact</h3>
+<p>Over 1 million trees planted across Makueni, Machakos and Kitui counties. Rehabilitated landscapes show measurably reduced erosion, improved groundwater recharge and returning biodiversity.</p>
+        </div>
+        <div class="solution-sidebar">
+          <div class="solution-stat-box">
+            <div class="solution-stat-number">1M+</div>
+            <div class="solution-stat-label">Trees Planted</div>
+          </div>
+          <div class="solution-cta-box">
+            <h4>Support This Work</h4>
+            <p>Your contribution directly funds projects on the ground in Kenya.</p>
+            <a href="contact.html" class="solution-cta-btn">Get Involved</a>
+          </div>
+          <div class="solution-others">
+            <h4>All Solutions</h4>
+            <ul class="solution-others-list">
+              <li class=""><a href="solution-water-access.html">Water Access <span>&#8250;</span></a></li>
+              <li class="active"><a href="solution-environmental-conservation.html">Environmental Conservation & NRM <span>&#8250;</span></a></li>
+              <li class=""><a href="solution-food-production.html">Food Production & Livelihoods <span>&#8250;</span></a></li>
+              <li class=""><a href="solution-hygiene-sanitation.html">Hygiene & Sanitation <span>&#8250;</span></a></li>
+              <li class=""><a href="solution-skills-knowledge.html">Skills & Knowledge Management <span>&#8250;</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-watermark" aria-hidden="true">ASDF</div>
+    <div class="footer-container">
+      <div class="footer-top-row">
+        <a href="index.html" class="footer-logo-link">
+          <img class="footer-logo-img" src="images/ASDF-high-rez.png" alt="logo" height="52" style="filter:brightness(0) invert(1);">
+        </a>
+        <div class="footer-subscribe">
+          <p class="subscribe-label">Stay updated with our work</p>
+          <form class="subscribe-form" onsubmit="return false;">
+            <input type="email" class="subscribe-input" placeholder="Enter your email address">
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-main-row">
+        <div class="footer-nav-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#solutions">Our Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h3>Our Solutions</h3>
+          <ul class="footer-links">
+            <li><a href="solution-environmental-conservation.html">Environmental Conservation and NRM</a></li>
+            <li><a href="solution-food-production.html">Food Production and Livelihoods</a></li>
+            <li><a href="solution-hygiene-sanitation.html">Hygiene and Sanitation</a></li>
+            <li><a href="solution-skills-knowledge.html">Skills and Knowledge Management</a></li>
+            <li><a href="solution-water-access.html">Water Access</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h3>Contact Us</h3>
+          <ul class="contact-info-list">
+            <li><span>infor.asdf@gmail.com</span></li>
+            <li><span>+254 798 623 130</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-row">
+        <p>&copy; Copyright 2026. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    const topBar = document.getElementById('topBar');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY > 60;
+      header.classList.toggle('scrolled', scrolled);
+      header.classList.toggle('top-hidden', scrolled);
+      if (topBar) topBar.classList.toggle('hidden', scrolled);
+    });
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    if (menuToggle) {
+      menuToggle.addEventListener('click', () => { menuToggle.classList.toggle('active'); mainNav.classList.toggle('active'); });
+    }
+    const langToggle = document.getElementById('langToggle');
+    const langSwitcher = document.getElementById('langSwitcher');
+    if (langToggle) {
+      langToggle.addEventListener('click', e => { e.stopPropagation(); langSwitcher.classList.toggle('open'); });
+      document.addEventListener('click', () => langSwitcher.classList.remove('open'));
+      document.querySelectorAll('.lang-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.lang-option').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          document.querySelector('.lang-flag').textContent = btn.dataset.flag || btn.textContent.split(' ')[0];
+          document.querySelector('.lang-label').textContent = btn.dataset.label;
+          langSwitcher.classList.remove('open');
+        });
+      });
+    }
+  </script>
+<script src="search.js"></script>
+</body>
+</html>
