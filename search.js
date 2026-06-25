@@ -8,6 +8,7 @@
     { type: 'Page', title: 'About Us', desc: 'Learn about ASDF — our journey, vision, mission and 15 years of work in Kenya.', url: 'about.html', tags: 'about journey vision mission ngo kenya 2010' },
     { type: 'Page', title: 'Blog', desc: 'Stories, updates and insights from our work on the ground.', url: 'blog.html', tags: 'blog news stories updates articles' },
     { type: 'Page', title: 'Contact Us', desc: 'Get in touch — phone, email, working hours and contact form.', url: 'contact.html', tags: 'contact phone email address working hours form' },
+    { type: 'Page', title: 'Donate', desc: 'Support ASDF — fund sand dams, clean water, trees and food security for communities in Kenya.', url: 'donate.html', tags: 'donate give donation support fund contribute volunteer money gift' },
 
     // Solutions
     { type: 'Solution', title: 'Water Access', desc: 'Sand dams, shallow wells, solar pipelines and school water tanks.', url: 'solution-water-access.html', tags: 'water dam wells pipeline tank access clean drinking' },
@@ -213,4 +214,76 @@
     });
   });
 
+})();
+
+/* ── Solutions Mega Menu ─────────────────────────────────────────── */
+(function () {
+  const ICON = {
+    water: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6 8 4 12 4 15a8 8 0 0 0 16 0c0-3-2-7-8-13z"/></svg>',
+    env:   '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 19.34A16 16 0 0 0 8.53 21c4.72-1.81 8.49-5.81 8.49-13z"/><path d="M17 8c0 10-5 13-9 13"/></svg>',
+    food:  '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12a5 5 0 0 0 5-5c0-2.8-2.2-5-5-5s-5 2.2-5 5a5 5 0 0 0 5 5z"/><path d="M17 12a4 4 0 0 0 4-4c0-2.2-1.8-4-4-4"/><path d="M7 12a4 4 0 0 1-4-4c0-2.2 1.8-4 4-4"/></svg>',
+    wash:  '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>',
+    skills:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>'
+  };
+
+  const SOLUTIONS = [
+    { title: 'Water Access', url: 'solution-water-access.html', icon: ICON.water,
+      children: [
+        { title: 'Rock Catchments',   url: 'solution-water-access.html#rock-catchments' },
+        { title: 'Sand Dams',         url: 'solution-water-access.html#sand-dams' },
+        { title: 'School Water Tanks', url: 'solution-water-access.html#school-water-tanks' },
+        { title: 'Shallow Wells',     url: 'solution-water-access.html#shallow-wells' },
+        { title: 'Solar Pipelines',   url: 'solution-water-access.html#solar-pipelines' }
+      ] },
+    { title: 'Environmental Conservation &amp; NRM', url: 'solution-environmental-conservation.html', icon: ICON.env,
+      children: [
+        { title: 'Agro-Forestry',  url: 'solution-environmental-conservation.html#agro-forestry' },
+        { title: 'Energy Stoves',  url: 'solution-environmental-conservation.html#energy-stoves' },
+        { title: 'Farm Terracing', url: 'solution-environmental-conservation.html#farm-terracing' }
+      ] },
+    { title: 'Food Production &amp; Livelihoods', url: 'solution-food-production.html', icon: ICON.food,
+      children: [
+        { title: 'Drought Tolerant Seeds', url: 'solution-food-production.html#drought-tolerant-seeds' },
+        { title: 'Food Production',        url: 'solution-food-production.html#food-production' },
+        { title: 'Pasture Production',     url: 'solution-food-production.html#pasture-production' }
+      ] },
+    { title: 'Hygiene &amp; Sanitation', url: 'solution-hygiene-sanitation.html', icon: ICON.wash,
+      desc: 'WASH facilities, school sanitation units and hygiene education.' },
+    { title: 'Skills &amp; Knowledge Management', url: 'solution-skills-knowledge.html', icon: ICON.skills,
+      desc: 'Training community leaders, masons and water committees.' }
+  ];
+
+  function build() {
+    let wrap = null;
+    document.querySelectorAll('.nav-dropdown-wrap .dropdown-trigger').forEach(t => {
+      if (/our solutions/i.test(t.textContent)) wrap = t.closest('.nav-dropdown-wrap');
+    });
+    if (!wrap) return;
+    const dd = wrap.querySelector('.nav-dropdown');
+    if (!dd) return;
+
+    let html = '<div class="mega-grid">';
+    SOLUTIONS.forEach(s => {
+      html += '<div class="mega-col">';
+      html += '<a class="mega-col-title" href="' + s.url + '"><span class="mega-col-icon">' + s.icon + '</span><span>' + s.title + '</span></a>';
+      if (s.children) {
+        html += '<ul class="mega-sublist">';
+        s.children.forEach(c => { html += '<li><a href="' + c.url + '">' + c.title + '</a></li>'; });
+        html += '</ul>';
+      } else {
+        html += '<p class="mega-col-desc">' + s.desc + '</p>';
+      }
+      html += '</div>';
+    });
+    html += '</div>';
+
+    dd.innerHTML = html;
+    dd.classList.add('mega-menu');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', build);
+  } else {
+    build();
+  }
 })();

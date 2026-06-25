@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" href="images/ASDF-high-rez.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="accessibility.css">
   <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
@@ -38,7 +39,6 @@
           </button>
           <div class="lang-dropdown" id="langDropdown">
             <button class="lang-option active" data-lang="en" data-flag="&#127468;&#127463;" data-label="EN">&#127468;&#127463; English</button>
-            <button class="lang-option" data-lang="fr" data-flag="&#127467;&#127479;" data-label="FR">&#127467;&#127479; Français</button>
             <button class="lang-option" data-lang="sw" data-flag="&#127472;&#127466;" data-label="SW">&#127472;&#127466; Kiswahili</button>
           </div>
         </div>
@@ -84,7 +84,7 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </button>
         <div class="donate-banner-wrapper">
-          <a href="contact.html" class="donate-btn"><span>VOLUNTEER</span></a>
+          <a href="donate.html" class="donate-btn"><span>Donate</span></a>
         </div>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
@@ -95,7 +95,7 @@
 
   <!-- Inner Hero -->
   <section class="inner-hero">
-    <div class="inner-hero-bg" style="background-image:url('images/hero-2.png');"></div>
+    <div class="inner-hero-bg" style="background-image:url('images/asdf-web/Water%20Access/Sand%20dams/ASDF_Complete%20SDs%20(27).JPG');"></div>
     <h1 class="inner-hero-title">Gallery</h1>
     <p class="inner-hero-breadcrumb"><a href="index.html">Home</a><span>/</span>Media<span>/</span>Gallery</p>
     <p class="inner-hero-sub">Photos from our projects and communities across Makueni, Machakos and Kitui</p>
@@ -170,70 +170,8 @@
         </button>
       </div>
 
-      <!-- Masonry grid -->
-      <div class="gallery-grid" id="galleryGrid">
-
-        <div class="gal-item" data-cat="water" data-title="Nzaui Sand Dam" data-desc="A 4m-high sand dam in Makueni County capturing 18,000m³ of water per season.">
-          <div class="gal-img-wrap"><img src="images/hero-1.png" alt="Nzaui Sand Dam" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Nzaui Sand Dam</span></div>
-        </div>
-
-        <div class="gal-item tall" data-cat="community" data-title="Community Training Day" data-desc="ASDF volunteers training water committee members in Machakos County.">
-          <div class="gal-img-wrap"><img src="images/hero-2.png" alt="Community Training" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Community Training Day</span></div>
-        </div>
-
-        <div class="gal-item" data-cat="education" data-title="Wote Girls School Tank" data-desc="50,000L rainwater harvesting tank at Wote Girls Secondary School.">
-          <div class="gal-img-wrap"><img src="images/hero-3.png" alt="School Tank" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Wote Girls School Tank</span></div>
-        </div>
-
-        <div class="gal-item wide" data-cat="construction" data-title="Dam Construction — Community Labour" data-desc="240 community members working together to build the Kyuso Sand Dam, Kitui.">
-          <div class="gal-img-wrap"><img src="images/hero-1.png" alt="Dam Construction" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Dam Construction — Community Labour</span></div>
-        </div>
-
-        <div class="gal-item" data-cat="environment" data-title="Tree Planting Drive" data-desc="Community members planting indigenous trees along the Nuu riverbank, Kitui.">
-          <div class="gal-img-wrap"><img src="images/hero-2.png" alt="Tree Planting" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Tree Planting Drive</span></div>
-        </div>
-
-        <div class="gal-item" data-cat="water" data-title="Solar Pipeline Installation" data-desc="Laying the 3km solar-powered pipeline at Kibwezi, Makueni County.">
-          <div class="gal-img-wrap"><img src="images/hero-3.png" alt="Solar Pipeline" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Solar Pipeline Installation</span></div>
-        </div>
-
-        <div class="gal-item tall" data-cat="community" data-title="Women's Water Committee" data-desc="Female-led water committee in Machakos County reviewing management records.">
-          <div class="gal-img-wrap"><img src="images/hero-1.png" alt="Women's Committee" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Women's Water Committee</span></div>
-        </div>
-
-        <div class="gal-item" data-cat="education" data-title="School WASH Block" data-desc="Gender-separated latrine block and handwashing stations at Kathiani Primary School.">
-          <div class="gal-img-wrap"><img src="images/hero-2.png" alt="WASH Block" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>School WASH Block</span></div>
-        </div>
-
-        <div class="gal-item" data-cat="environment" data-title="Rock Catchment — Mutomo" data-desc="Natural granite rock catchment directing seasonal rainfall into lined storage tanks.">
-          <div class="gal-img-wrap"><img src="images/hero-3.png" alt="Rock Catchment" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Rock Catchment — Mutomo</span></div>
-        </div>
-
-        <div class="gal-item wide" data-cat="water" data-title="Masii Sand Dam — Machakos" data-desc="Flagship cascade sand dam serving 1,500 community members in Masii, Machakos.">
-          <div class="gal-img-wrap"><img src="images/hero-1.png" alt="Masii Sand Dam" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Masii Sand Dam — Machakos</span></div>
-        </div>
-
-        <div class="gal-item" data-cat="construction" data-title="Masonry Training" data-desc="ASDF-trained masons learning sand dam construction techniques, Kitui County.">
-          <div class="gal-img-wrap"><img src="images/hero-2.png" alt="Masonry Training" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Masonry Training</span></div>
-        </div>
-
-        <div class="gal-item" data-cat="community" data-title="Community Graduation Day" data-desc="Communities graduating from the ASDF cooperative training programme.">
-          <div class="gal-img-wrap"><img src="images/hero-3.png" alt="Graduation Day" loading="lazy"></div>
-          <div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Community Graduation Day</span></div>
-        </div>
-
-      </div><!-- /gallery-grid -->
+      <!-- Masonry grid (populated from real ASDF photos by JS) -->
+      <div class="gallery-grid" id="galleryGrid"></div><!-- /gallery-grid -->
 
       <!-- Load more -->
       <div class="gallery-load-more">
@@ -244,6 +182,94 @@
 
     </div>
   </main>
+
+  <!-- Videos Section -->
+  <section class="video-section">
+    <div class="video-container">
+      <div class="video-head">
+        <span class="video-eyebrow"><i class="fa-solid fa-circle-play"></i> Watch</span>
+        <h2 class="video-title">Our <span>Videos</span></h2>
+        <p class="video-intro">The videos below provide deeper insight into our work and our impact within the communities we serve.</p>
+      </div>
+
+      <div class="video-grid">
+
+        <article class="video-card" data-yt="40fR3TqF1fU">
+          <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/40fR3TqF1fU/hqdefault.jpg" alt="Understanding how Sand Dams work" loading="lazy">
+            <span class="video-play"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <h3 class="video-name">Understanding how Sand Dams work</h3>
+        </article>
+
+        <article class="video-card" data-yt="wV54NhWqIno" data-start="49">
+          <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/wV54NhWqIno/hqdefault.jpg" alt="Regenerating the environment — Enhancing water security with sand dams" loading="lazy">
+            <span class="video-play"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <h3 class="video-name">Regenerating the Environment — Enhancing Water Security with Sand Dams</h3>
+        </article>
+
+        <article class="video-card" data-yt="xyzgf4QVhuA">
+          <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/xyzgf4QVhuA/hqdefault.jpg" alt="Sand Dam Construction Experience and what it means to community members" loading="lazy">
+            <span class="video-play"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <h3 class="video-name">Sand Dam Construction Experience and What It Means to Community Members</h3>
+        </article>
+
+        <article class="video-card" data-yt="KhbBdin3VBg">
+          <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/KhbBdin3VBg/hqdefault.jpg" alt="Timelapse of the full construction process of a sand dam" loading="lazy">
+            <span class="video-play"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <h3 class="video-name">A Timelapse Capturing the Full Construction Process of a Sand Dam</h3>
+        </article>
+
+        <article class="video-card" data-yt="UfHwZyE2GnM">
+          <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/UfHwZyE2GnM/hqdefault.jpg" alt="Water Security as a Driver of Gender Equality and Women's Empowerment in South Eastern Kenya" loading="lazy">
+            <span class="video-play"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <h3 class="video-name">Water Security as a Driver of Gender Equality and Women's Empowerment in South Eastern Kenya</h3>
+        </article>
+
+        <article class="video-card" data-yt="fV0_gMRmep4">
+          <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/fV0_gMRmep4/hqdefault.jpg" alt="Keeping Girls in School Through Access to Water" loading="lazy">
+            <span class="video-play"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <h3 class="video-name">Keeping Girls in School Through Access to Water</h3>
+        </article>
+
+        <article class="video-card" data-yt="dWqLqZB068U">
+          <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/dWqLqZB068U/hqdefault.jpg" alt="Voices from Our Partners — Just A Drop" loading="lazy">
+            <span class="video-play"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <h3 class="video-name">Voices from Our Partners — Just A Drop</h3>
+        </article>
+
+        <article class="video-card" data-yt="rn7kWjreGok" data-start="7">
+          <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/rn7kWjreGok/hqdefault.jpg" alt="Hear from our Directors" loading="lazy">
+            <span class="video-play"><i class="fa-solid fa-play"></i></span>
+          </div>
+          <h3 class="video-name">Hear from Our Directors</h3>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal">
+    <div class="video-modal-backdrop"></div>
+    <div class="video-modal-inner">
+      <button class="video-modal-close" id="videoModalClose" aria-label="Close video"><i class="fa-solid fa-xmark"></i></button>
+      <div class="video-modal-frame" id="videoModalFrame"></div>
+    </div>
+  </div>
 
   <!-- Lightbox -->
   <div id="galLightbox" class="gal-lb-overlay">
@@ -346,8 +372,186 @@
       });
     }
 
-    // ── Layout toolbar ──
+    // ── Build gallery from real ASDF photos ──
     const grid = document.getElementById('galleryGrid');
+    const A = 'images/asdf-web/';
+    const GALLERY = [
+      { c:'environment', t:'DSC 7177', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7177.JPG', d:'DSC 7177' },
+      { c:'environment', t:'DSC 7178', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7178.JPG', d:'DSC 7178' },
+      { c:'environment', t:'DSC 7181', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7181.JPG', d:'DSC 7181' },
+      { c:'environment', t:'DSC 7182', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7182.JPG', d:'DSC 7182' },
+      { c:'environment', t:'DSC 7185', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7185.JPG', d:'DSC 7185' },
+      { c:'environment', t:'DSC 7186', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7186.JPG', d:'DSC 7186' },
+      { c:'environment', t:'DSC 7188', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7188.JPG', d:'DSC 7188' },
+      { c:'environment', t:'DSC 7195', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7195.JPG', d:'DSC 7195' },
+      { c:'environment', t:'DSC 7196', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7196.JPG', d:'DSC 7196' },
+      { c:'environment', t:'DSC 7199', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7199.JPG', d:'DSC 7199' },
+      { c:'environment', t:'DSC 7200', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7200.JPG', d:'DSC 7200' },
+      { c:'environment', t:'DSC 7201', p:'Environmental Conservation and NRM/Agro-Forestry/DSC_7201.JPG', d:'DSC 7201' },
+      { c:'environment', t:'ASDF Kwainyoe SHG Energy Saving Jikos Installation (2)', p:'Environmental Conservation and NRM/Energy Stoves/ASDF_Kwainyoe SHG_Energy Saving Jikos Installation (2).JPG', d:'ASDF Kwainyoe SHG Energy Saving Jikos Installation (2)' },
+      { c:'environment', t:'ASDF Kwainyoe SHG Energy Saving Jikos Installation (3)', p:'Environmental Conservation and NRM/Energy Stoves/ASDF_Kwainyoe SHG_Energy Saving Jikos Installation (3).JPG', d:'ASDF Kwainyoe SHG Energy Saving Jikos Installation (3)' },
+      { c:'environment', t:'ASDF Kwainyoe SHG Energy Saving Jikos Installation (4)', p:'Environmental Conservation and NRM/Energy Stoves/ASDF_Kwainyoe SHG_Energy Saving Jikos Installation (4).JPG', d:'ASDF Kwainyoe SHG Energy Saving Jikos Installation (4)' },
+      { c:'environment', t:'ASDF Kwainyoe SHG Energy Saving Jikos Installation (5)', p:'Environmental Conservation and NRM/Energy Stoves/ASDF_Kwainyoe SHG_Energy Saving Jikos Installation (5).JPG', d:'ASDF Kwainyoe SHG Energy Saving Jikos Installation (5)' },
+      { c:'environment', t:'ASDF Kwainyoe SHG Energy Saving Jikos Installation (8)', p:'Environmental Conservation and NRM/Energy Stoves/ASDF_Kwainyoe SHG_Energy Saving Jikos Installation (8).JPG', d:'ASDF Kwainyoe SHG Energy Saving Jikos Installation (8)' },
+      { c:'environment', t:'ASDF Terracing (1)', p:'Environmental Conservation and NRM/Farm Terracing/ASDF_Terracing (1).JPG', d:'ASDF Terracing (1)' },
+      { c:'environment', t:'ASDF Terracing (2)', p:'Environmental Conservation and NRM/Farm Terracing/ASDF_Terracing (2).JPG', d:'ASDF Terracing (2)' },
+      { c:'environment', t:'ASDF Terracing (3)', p:'Environmental Conservation and NRM/Farm Terracing/ASDF_Terracing (3).JPG', d:'ASDF Terracing (3)' },
+      { c:'environment', t:'ASDF Terracing (4)', p:'Environmental Conservation and NRM/Farm Terracing/ASDF_Terracing (4).JPG', d:'ASDF Terracing (4)' },
+      { c:'environment', t:'ASDF Terracing (5)', p:'Environmental Conservation and NRM/Farm Terracing/ASDF_Terracing (5).JPG', d:'ASDF Terracing (5)' },
+      { c:'environment', t:'ASDF Terracing (6)', p:'Environmental Conservation and NRM/Farm Terracing/ASDF_Terracing (6).JPG', d:'ASDF Terracing (6)' },
+      { c:'environment', t:'ASDF Terracing (7)', p:'Environmental Conservation and NRM/Farm Terracing/ASDF_Terracing (7).JPG', d:'ASDF Terracing (7)' },
+      { c:'environment', t:'SHG Mbukilye Ngukilye   Farm Terracces (36)', p:'Environmental Conservation and NRM/Farm Terracing/SHG Mbukilye Ngukilye _ Farm Terracces (36).JPG', d:'SHG Mbukilye Ngukilye   Farm Terracces (36)' },
+      { c:'community', t:'ASDF Kangila women SHG Seed distribution (1)', p:'Food Production and Livelihoods/Drought Tolerant Seeds/ASDF_Kangila women SHG_Seed distribution (1).JPG', d:'ASDF Kangila women SHG Seed distribution (1)' },
+      { c:'community', t:'ASDF Kangila women SHG Seed distribution (2)', p:'Food Production and Livelihoods/Drought Tolerant Seeds/ASDF_Kangila women SHG_Seed distribution (2).JPG', d:'ASDF Kangila women SHG Seed distribution (2)' },
+      { c:'community', t:'ASDF Kanywa Mbithi SHG seed distribution (1)', p:'Food Production and Livelihoods/Drought Tolerant Seeds/ASDF_Kanywa Mbithi SHG_seed distribution (1).JPG', d:'ASDF Kanywa Mbithi SHG seed distribution (1)' },
+      { c:'community', t:'ASDF Kanywa Mbithi SHG seed distribution (2)', p:'Food Production and Livelihoods/Drought Tolerant Seeds/ASDF_Kanywa Mbithi SHG_seed distribution (2).JPG', d:'ASDF Kanywa Mbithi SHG seed distribution (2)' },
+      { c:'community', t:'ASDF Kanywa Mbithi SHG seed distribution (3)', p:'Food Production and Livelihoods/Drought Tolerant Seeds/ASDF_Kanywa Mbithi SHG_seed distribution (3).JPG', d:'ASDF Kanywa Mbithi SHG seed distribution (3)' },
+      { c:'community', t:'ASDF Kithayoni SHG seed distribution (1)', p:'Food Production and Livelihoods/Drought Tolerant Seeds/ASDF_Kithayoni SHG_seed distribution (1).JPG', d:'ASDF Kithayoni SHG seed distribution (1)' },
+      { c:'community', t:'ASDF Kithayoni SHG seed distribution (2)', p:'Food Production and Livelihoods/Drought Tolerant Seeds/ASDF_Kithayoni SHG_seed distribution (2).JPG', d:'ASDF Kithayoni SHG seed distribution (2)' },
+      { c:'community', t:'ASDF Kithayoni SHG seed distribution (3)', p:'Food Production and Livelihoods/Drought Tolerant Seeds/ASDF_Kithayoni SHG_seed distribution (3).JPG', d:'ASDF Kithayoni SHG seed distribution (3)' },
+      { c:'community', t:'ASDF Kithayoni SHG seed distribution (4)', p:'Food Production and Livelihoods/Drought Tolerant Seeds/ASDF_Kithayoni SHG_seed distribution (4).JPG', d:'ASDF Kithayoni SHG seed distribution (4)' },
+      { c:'community', t:'ASDF Seeds', p:'Food Production and Livelihoods/Drought Tolerant Seeds/ASDF_Seeds.JPG', d:'ASDF Seeds' },
+      { c:'community', t:'SHG Sinai seed distribution', p:'Food Production and Livelihoods/Drought Tolerant Seeds/SHG Sinai_seed distribution.jpg', d:'SHG Sinai seed distribution' },
+      { c:'community', t:'ASDF Crop Production (1)', p:'Food Production and Livelihoods/Food Production/ASDF_Crop Production (1).JPG', d:'ASDF Crop Production (1)' },
+      { c:'community', t:'ASDF Crop Production (2)', p:'Food Production and Livelihoods/Food Production/ASDF_Crop Production (2).jpg', d:'ASDF Crop Production (2)' },
+      { c:'community', t:'ASDF Crop Production (3)', p:'Food Production and Livelihoods/Food Production/ASDF_Crop Production (3).jpg', d:'ASDF Crop Production (3)' },
+      { c:'community', t:'ASDF Crop Production (6)', p:'Food Production and Livelihoods/Food Production/ASDF_Crop Production (6).JPG', d:'ASDF Crop Production (6)' },
+      { c:'community', t:'ASDF Hydroponic Impact (10)', p:'Food Production and Livelihoods/Food Production/ASDF_Hydroponic Impact (10).jpg', d:'ASDF Hydroponic Impact (10)' },
+      { c:'community', t:'ASDF Hydroponic Impact (4)', p:'Food Production and Livelihoods/Food Production/ASDF_Hydroponic Impact (4).jpg', d:'ASDF Hydroponic Impact (4)' },
+      { c:'community', t:'ASDF Hydroponic Impact (8)', p:'Food Production and Livelihoods/Food Production/ASDF_Hydroponic Impact (8).jpg', d:'ASDF Hydroponic Impact (8)' },
+      { c:'community', t:'ASDF Kinyenyoni Kakuswi SHG Shedrack Mutie Mwanza, 34 years (1)', p:'Food Production and Livelihoods/Food Production/ASDF_Kinyenyoni Kakuswi SHG_Shedrack Mutie Mwanza, 34 years (1).JPG', d:'ASDF Kinyenyoni Kakuswi SHG Shedrack Mutie Mwanza, 34 years (1)' },
+      { c:'community', t:'ASDF Kithito Andu Akuu Ngaa Impact Story (7)', p:'Food Production and Livelihoods/Food Production/ASDF_Kithito Andu Akuu Ngaa_Impact Story (7).jpg', d:'ASDF Kithito Andu Akuu Ngaa Impact Story (7)' },
+      { c:'community', t:'ASDF Kyeni Kya Kiianzou SHG Impact Story (7)', p:'Food Production and Livelihoods/Food Production/ASDF_Kyeni Kya Kiianzou SHG_Impact Story (7).jpg', d:'ASDF Kyeni Kya Kiianzou SHG Impact Story (7)' },
+      { c:'community', t:'ASDF Kyeni Kya Kiianzou Drip Irrigation (2)', p:'Food Production and Livelihoods/Food Production/ASDF_Kyeni Kya Kiianzou_Drip Irrigation (2).JPG', d:'ASDF Kyeni Kya Kiianzou Drip Irrigation (2)' },
+      { c:'community', t:'ASDF Kyeni Kya Kiianzou Drip Irrigation (29)', p:'Food Production and Livelihoods/Food Production/ASDF_Kyeni Kya Kiianzou_Drip Irrigation (29).JPG', d:'ASDF Kyeni Kya Kiianzou Drip Irrigation (29)' },
+      { c:'community', t:'ASDF Kyeni Kya Kiianzou Drip Irrigation (30)', p:'Food Production and Livelihoods/Food Production/ASDF_Kyeni Kya Kiianzou_Drip Irrigation (30).JPG', d:'ASDF Kyeni Kya Kiianzou Drip Irrigation (30)' },
+      { c:'community', t:'ASDF Wikwatyo Wa Mativo SHG Request photos  (44)', p:'Food Production and Livelihoods/Food Production/ASDF_Wikwatyo Wa Mativo SHG_Request photos  (44).JPG', d:'ASDF Wikwatyo Wa Mativo SHG Request photos  (44)' },
+      { c:'community', t:'DSC 9127', p:'Food Production and Livelihoods/Food Production/DSC_9127.JPG', d:'DSC 9127' },
+      { c:'community', t:'DSC 9137', p:'Food Production and Livelihoods/Food Production/DSC_9137.JPG', d:'DSC 9137' },
+      { c:'environment', t:'DSC 7125', p:'Food Production and Livelihoods/Pasture Production/DSC_7125.JPG', d:'DSC 7125' },
+      { c:'environment', t:'DSC 7126', p:'Food Production and Livelihoods/Pasture Production/DSC_7126.JPG', d:'DSC 7126' },
+      { c:'environment', t:'DSC 7127', p:'Food Production and Livelihoods/Pasture Production/DSC_7127.JPG', d:'DSC 7127' },
+      { c:'environment', t:'DSC 7136', p:'Food Production and Livelihoods/Pasture Production/DSC_7136.JPG', d:'DSC 7136' },
+      { c:'environment', t:'DSC 7147', p:'Food Production and Livelihoods/Pasture Production/DSC_7147.JPG', d:'DSC 7147' },
+      { c:'community', t:'ASDF WASH Training (1)', p:'Hygiene and Sanitation/ASDF_WASH Training (1).JPG', d:'ASDF WASH Training (1)' },
+      { c:'community', t:'ASDF WASH Training (2)', p:'Hygiene and Sanitation/ASDF_WASH Training (2).JPG', d:'ASDF WASH Training (2)' },
+      { c:'community', t:'ASDF WASH Training (3)', p:'Hygiene and Sanitation/ASDF_WASH Training (3).JPG', d:'ASDF WASH Training (3)' },
+      { c:'community', t:'ASDF WASH Training (4)', p:'Hygiene and Sanitation/ASDF_WASH Training (4).JPG', d:'ASDF WASH Training (4)' },
+      { c:'community', t:'ASDF WASH Training (5)', p:'Hygiene and Sanitation/ASDF_WASH Training (5).JPG', d:'ASDF WASH Training (5)' },
+      { c:'community', t:'ASDF WASH Training (6)', p:'Hygiene and Sanitation/ASDF_WASH Training (6).JPG', d:'ASDF WASH Training (6)' },
+      { c:'community', t:'ASDF WASH Training (7)', p:'Hygiene and Sanitation/ASDF_WASH Training (7).JPG', d:'ASDF WASH Training (7)' },
+      { c:'education', t:'Kikumini Pri HWS (8)', p:'Hygiene and Sanitation/Kikumini Pri_HWS (8).jpg', d:'Kikumini Pri HWS (8)' },
+      { c:'education', t:'Mituvu Sec HWS (5)', p:'Hygiene and Sanitation/Mituvu Sec_HWS (5).jpg', d:'Mituvu Sec HWS (5)' },
+      { c:'community', t:'ASDF Bondeni Ndalani SHG Conflict Resulution Training (1)', p:'Skills and Knowledge Management/ASDF_Bondeni Ndalani SHG_Conflict Resulution Training (1).jpg', d:'ASDF Bondeni Ndalani SHG Conflict Resulution Training (1)' },
+      { c:'community', t:'ASDF Bondeni Ndalani SHG Conflict Resulution Training (8)', p:'Skills and Knowledge Management/ASDF_Bondeni Ndalani SHG_Conflict Resulution Training (8).jpg', d:'ASDF Bondeni Ndalani SHG Conflict Resulution Training (8)' },
+      { c:'community', t:'ASDF Ngoni North SHG Nutrition And Value Addition Training (1)', p:'Skills and Knowledge Management/ASDF_Ngoni North SHG_Nutrition And Value Addition Training (1).JPG', d:'ASDF Ngoni North SHG Nutrition And Value Addition Training (1)' },
+      { c:'community', t:'ASDF TCF Peer to Peer Visit(10)', p:'Skills and Knowledge Management/ASDF_TCF Peer to Peer Visit(10).JPG', d:'ASDF TCF Peer to Peer Visit(10)' },
+      { c:'community', t:'ASDF TCF Peer to Peer Visit(11)', p:'Skills and Knowledge Management/ASDF_TCF Peer to Peer Visit(11).JPG', d:'ASDF TCF Peer to Peer Visit(11)' },
+      { c:'community', t:'ASDF TCF Peer to Peer Visit(33)', p:'Skills and Knowledge Management/ASDF_TCF Peer to Peer Visit(33).JPG', d:'ASDF TCF Peer to Peer Visit(33)' },
+      { c:'community', t:'ASDF Tii Mikau Growers SHG Value addition training (1)', p:'Skills and Knowledge Management/ASDF_Tii Mikau Growers SHG_Value addition training (1).jpg', d:'ASDF Tii Mikau Growers SHG Value addition training (1)' },
+      { c:'community', t:'ASDF Tii Mikau Growers SHG Value addition training (5)', p:'Skills and Knowledge Management/ASDF_Tii Mikau Growers SHG_Value addition training (5).jpg', d:'ASDF Tii Mikau Growers SHG Value addition training (5)' },
+      { c:'community', t:'ASDF Wikwatyo wa Aka Kilulu SHG Group Governance and Dynamics Training (6)', p:'Skills and Knowledge Management/ASDF_Wikwatyo wa Aka Kilulu SHG_Group Governance and Dynamics Training (6).JPG', d:'ASDF Wikwatyo wa Aka Kilulu SHG Group Governance and Dynamics Training (6)' },
+      { c:'community', t:'ASDF Wikwatyo wa Aka Kilulu SHG Group Governance and Dynamics Training (9)', p:'Skills and Knowledge Management/ASDF_Wikwatyo wa Aka Kilulu SHG_Group Governance and Dynamics Training (9).JPG', d:'ASDF Wikwatyo wa Aka Kilulu SHG Group Governance and Dynamics Training (9)' },
+      { c:'water', t:'ASDF Kikumini Adult RC (1)', p:'Water Access/Rock Catchments/ASDF_Kikumini Adult RC (1).JPG', d:'ASDF Kikumini Adult RC (1)' },
+      { c:'water', t:'ASDF Kikumini RC Complete After Paint (41)', p:'Water Access/Rock Catchments/ASDF_Kikumini RC Complete After Paint (41).JPG', d:'ASDF Kikumini RC Complete After Paint (41)' },
+      { c:'water', t:'ASDF Kikumini RC Complete After Paint (47)', p:'Water Access/Rock Catchments/ASDF_Kikumini RC Complete After Paint (47).JPG', d:'ASDF Kikumini RC Complete After Paint (47)' },
+      { c:'water', t:'ASDF Rock catchment (1)', p:'Water Access/Rock Catchments/ASDF_Rock catchment (1).jpeg', d:'ASDF Rock catchment (1)' },
+      { c:'water', t:'ASDF Rock catchment (2)', p:'Water Access/Rock Catchments/ASDF_Rock catchment (2).jpeg', d:'ASDF Rock catchment (2)' },
+      { c:'water', t:'ASDF Rock catchment (3)', p:'Water Access/Rock Catchments/ASDF_Rock catchment (3).jpeg', d:'ASDF Rock catchment (3)' },
+      { c:'water', t:'ASDF Complete SDs (2)', p:'Water Access/Sand dams/ASDF_Complete SDs (2).JPG', d:'ASDF Complete SDs (2)' },
+      { c:'water', t:'ASDF Complete SDs (24)', p:'Water Access/Sand dams/ASDF_Complete SDs (24).JPG', d:'ASDF Complete SDs (24)' },
+      { c:'water', t:'ASDF Complete SDs (27)', p:'Water Access/Sand dams/ASDF_Complete SDs (27).JPG', d:'ASDF Complete SDs (27)' },
+      { c:'water', t:'ASDF Complete SDs (3)', p:'Water Access/Sand dams/ASDF_Complete SDs (3).JPG', d:'ASDF Complete SDs (3)' },
+      { c:'water', t:'ASDF Complete SDs (4)', p:'Water Access/Sand dams/ASDF_Complete SDs (4).JPG', d:'ASDF Complete SDs (4)' },
+      { c:'water', t:'ASDF Complete SDs (43)', p:'Water Access/Sand dams/ASDF_Complete SDs (43).JPG', d:'ASDF Complete SDs (43)' },
+      { c:'water', t:'ASDF Complete SDs (44)', p:'Water Access/Sand dams/ASDF_Complete SDs (44).JPG', d:'ASDF Complete SDs (44)' },
+      { c:'water', t:'ASDF Complete SDs (46)', p:'Water Access/Sand dams/ASDF_Complete SDs (46).JPG', d:'ASDF Complete SDs (46)' },
+      { c:'water', t:'ASDF Complete SDs (47)', p:'Water Access/Sand dams/ASDF_Complete SDs (47).JPG', d:'ASDF Complete SDs (47)' },
+      { c:'water', t:'ASDF Complete SDs (48)', p:'Water Access/Sand dams/ASDF_Complete SDs (48).JPG', d:'ASDF Complete SDs (48)' },
+      { c:'water', t:'ASDF Complete SDs (49)', p:'Water Access/Sand dams/ASDF_Complete SDs (49).JPG', d:'ASDF Complete SDs (49)' },
+      { c:'water', t:'ASDF Complete SDs (50)', p:'Water Access/Sand dams/ASDF_Complete SDs (50).JPG', d:'ASDF Complete SDs (50)' },
+      { c:'water', t:'ASDF Complete SDs (51)', p:'Water Access/Sand dams/ASDF_Complete SDs (51).JPG', d:'ASDF Complete SDs (51)' },
+      { c:'water', t:'ASDF Complete SDs (53)', p:'Water Access/Sand dams/ASDF_Complete SDs (53).JPG', d:'ASDF Complete SDs (53)' },
+      { c:'water', t:'ASDF Complete SDs (54)', p:'Water Access/Sand dams/ASDF_Complete SDs (54).JPG', d:'ASDF Complete SDs (54)' },
+      { c:'water', t:'ASDF Complete SDs (56)', p:'Water Access/Sand dams/ASDF_Complete SDs (56).jpg', d:'ASDF Complete SDs (56)' },
+      { c:'water', t:'ASDF Complete SDs (57)', p:'Water Access/Sand dams/ASDF_Complete SDs (57).JPG', d:'ASDF Complete SDs (57)' },
+      { c:'water', t:'ASDF Complete SDs (58)', p:'Water Access/Sand dams/ASDF_Complete SDs (58).JPG', d:'ASDF Complete SDs (58)' },
+      { c:'water', t:'ASDF Complete SDs (6)', p:'Water Access/Sand dams/ASDF_Complete SDs (6).JPG', d:'ASDF Complete SDs (6)' },
+      { c:'water', t:'ASDF Complete SDs (7)', p:'Water Access/Sand dams/ASDF_Complete SDs (7).JPG', d:'ASDF Complete SDs (7)' },
+      { c:'water', t:'DSC 5097', p:'Water Access/Sand dams/DSC_5097.JPG', d:'DSC 5097' },
+      { c:'water', t:'Kandu Kaseveni SHG (3)', p:'Water Access/Sand dams/Kandu Kaseveni SHG (3).JPG', d:'Kandu Kaseveni SHG (3)' },
+      { c:'water', t:'Kandu Kaseveni SHG (7)', p:'Water Access/Sand dams/Kandu Kaseveni SHG (7).JPG', d:'Kandu Kaseveni SHG (7)' },
+      { c:'construction', t:'ASDF Sand Dam Construction (13)', p:'Water Access/Sand dams/Sand Dam Construction/ASDF_Sand Dam Construction (13).JPG', d:'ASDF Sand Dam Construction (13)' },
+      { c:'construction', t:'ASDF Sand Dam Construction (17)', p:'Water Access/Sand dams/Sand Dam Construction/ASDF_Sand Dam Construction (17).JPG', d:'ASDF Sand Dam Construction (17)' },
+      { c:'construction', t:'ASDF Sand Dam Construction (6)', p:'Water Access/Sand dams/Sand Dam Construction/ASDF_Sand Dam Construction (6).JPG', d:'ASDF Sand Dam Construction (6)' },
+      { c:'construction', t:'ASDF Sand Dam Construction (7)', p:'Water Access/Sand dams/Sand Dam Construction/ASDF_Sand Dam Construction (7).JPG', d:'ASDF Sand Dam Construction (7)' },
+      { c:'construction', t:'ASDF Sand Dam Construction (9)', p:'Water Access/Sand dams/Sand Dam Construction/ASDF_Sand Dam Construction (9).JPG', d:'ASDF Sand Dam Construction (9)' },
+      { c:'construction', t:'ASDF Sand Dam Trenching (2)', p:'Water Access/Sand dams/Sand Dam Construction/ASDF_Sand Dam Trenching (2).JPG', d:'ASDF Sand Dam Trenching (2)' },
+      { c:'construction', t:'ASDF Sand Dam Trenching (4)', p:'Water Access/Sand dams/Sand Dam Construction/ASDF_Sand Dam Trenching (4).JPG', d:'ASDF Sand Dam Trenching (4)' },
+      { c:'construction', t:'ASDF Sand Dam Trenching (6)', p:'Water Access/Sand dams/Sand Dam Construction/ASDF_Sand Dam Trenching (6).JPG', d:'ASDF Sand Dam Trenching (6)' },
+      { c:'construction', t:'ASDF SD Construction (1)', p:'Water Access/Sand dams/Sand Dam Construction/ASDF_SD Construction (1).JPG', d:'ASDF SD Construction (1)' },
+      { c:'construction', t:'ASDF SD Construction (2)', p:'Water Access/Sand dams/Sand Dam Construction/ASDF_SD Construction (2).JPG', d:'ASDF SD Construction (2)' },
+      { c:'construction', t:'ASDF SD Construction (3)', p:'Water Access/Sand dams/Sand Dam Construction/ASDF_SD Construction (3).JPG', d:'ASDF SD Construction (3)' },
+      { c:'education', t:'ASDF Kyulungwa Primary WT After Paint (23)', p:'Water Access/School Water Tanks/ASDF_Kyulungwa Primary WT_After Paint (23).JPG', d:'ASDF Kyulungwa Primary WT After Paint (23)' },
+      { c:'education', t:'ASDF Ndwaani Pri Tank (1)', p:'Water Access/School Water Tanks/ASDF_Ndwaani Pri Tank (1).JPG', d:'ASDF Ndwaani Pri Tank (1)' },
+      { c:'education', t:'ASDF Ngaa Pri WT (1)', p:'Water Access/School Water Tanks/ASDF_Ngaa Pri WT (1).JPG', d:'ASDF Ngaa Pri WT (1)' },
+      { c:'education', t:'ASDF SWTs (1)', p:'Water Access/School Water Tanks/ASDF_SWTs (1).JPG', d:'ASDF SWTs (1)' },
+      { c:'education', t:'ASDF SWTs (2)', p:'Water Access/School Water Tanks/ASDF_SWTs (2).JPG', d:'ASDF SWTs (2)' },
+      { c:'education', t:'ASDF Ung\'atani Pri WT', p:'Water Access/School Water Tanks/ASDF_Ung\'atani Pri WT.JPG', d:'ASDF Ung\'atani Pri WT' },
+      { c:'water', t:'ASDF Kyamuisu Development SHG Water Impact (2)', p:'Water Access/Shallow Wells/ASDF_Kyamuisu Development SHG_Water Impact (2).JPG', d:'ASDF Kyamuisu Development SHG Water Impact (2)' },
+      { c:'water', t:'ASDF Kyamuisu Development SHG Water Impact (3)', p:'Water Access/Shallow Wells/ASDF_Kyamuisu Development SHG_Water Impact (3).JPG', d:'ASDF Kyamuisu Development SHG Water Impact (3)' },
+      { c:'water', t:'ASDF Kyamuisu Development SHG Water Impact (4)', p:'Water Access/Shallow Wells/ASDF_Kyamuisu Development SHG_Water Impact (4).JPG', d:'ASDF Kyamuisu Development SHG Water Impact (4)' },
+      { c:'water', t:'ASDF Kyamuisu Development SHG Water Impact (7)', p:'Water Access/Shallow Wells/ASDF_Kyamuisu Development SHG_Water Impact (7).JPG', d:'ASDF Kyamuisu Development SHG Water Impact (7)' },
+      { c:'water', t:'ASDF Kyamuisu Development SHG Water Impact (9)', p:'Water Access/Shallow Wells/ASDF_Kyamuisu Development SHG_Water Impact (9).JPG', d:'ASDF Kyamuisu Development SHG Water Impact (9)' },
+      { c:'water', t:'ASDF Mutui Museo SHG Clean Water (7)', p:'Water Access/Shallow Wells/ASDF_Mutui Museo SHG_Clean Water (7).JPG', d:'ASDF Mutui Museo SHG Clean Water (7)' },
+      { c:'water', t:'ASDF Mutui Museo SHG Clean Water (8)', p:'Water Access/Shallow Wells/ASDF_Mutui Museo SHG_Clean Water (8).JPG', d:'ASDF Mutui Museo SHG Clean Water (8)' },
+      { c:'water', t:'ASDF Ngongani Water Project Water Impact (6)', p:'Water Access/Shallow Wells/ASDF_Ngongani Water Project_Water Impact (6).JPG', d:'ASDF Ngongani Water Project Water Impact (6)' },
+      { c:'water', t:'ASDF Shallow Well', p:'Water Access/Shallow Wells/ASDF_Shallow Well.JPG', d:'ASDF Shallow Well' },
+      { c:'water', t:'ASDF Shallow Wells (1)', p:'Water Access/Shallow Wells/ASDF_Shallow Wells (1).jpeg', d:'ASDF Shallow Wells (1)' },
+      { c:'water', t:'ASDF Shallow Wells (1)', p:'Water Access/Shallow Wells/ASDF_Shallow Wells (1).JPG', d:'ASDF Shallow Wells (1)' },
+      { c:'water', t:'ASDF Shallow Wells (2)', p:'Water Access/Shallow Wells/ASDF_Shallow Wells (2).JPG', d:'ASDF Shallow Wells (2)' },
+      { c:'water', t:'ASDF Shallow Wells (3)', p:'Water Access/Shallow Wells/ASDF_Shallow Wells (3).JPG', d:'ASDF Shallow Wells (3)' },
+      { c:'water', t:'ASDF Twone Mbee Wasya Wa Mavalani Water Impact (1)', p:'Water Access/Shallow Wells/ASDF_Twone Mbee Wasya Wa Mavalani_Water Impact (1).JPG', d:'ASDF Twone Mbee Wasya Wa Mavalani Water Impact (1)' },
+      { c:'water', t:'ASDF Wikwaty\'o Wa Mativo SHG Water Impact (14)', p:'Water Access/Shallow Wells/ASDF_Wikwaty\'o Wa Mativo SHG_Water Impact (14).JPG', d:'ASDF Wikwaty\'o Wa Mativo SHG Water Impact (14)' },
+      { c:'water', t:'ASDF Wikwaty\'o Wa Mativo SHG Water Impact (9)', p:'Water Access/Shallow Wells/ASDF_Wikwaty\'o Wa Mativo SHG_Water Impact (9).JPG', d:'ASDF Wikwaty\'o Wa Mativo SHG Water Impact (9)' },
+      { c:'water', t:'ASDF Kasilu SHG solar pipeline (10)', p:'Water Access/Solar Pipelines/ASDF_Kasilu SHG_solar pipeline (10).JPG', d:'ASDF Kasilu SHG solar pipeline (10)' },
+      { c:'water', t:'ASDF Kasilu SHG solar pipeline (11)', p:'Water Access/Solar Pipelines/ASDF_Kasilu SHG_solar pipeline (11).JPG', d:'ASDF Kasilu SHG solar pipeline (11)' },
+      { c:'water', t:'ASDF Kasilu SHG solar pipeline (7)', p:'Water Access/Solar Pipelines/ASDF_Kasilu SHG_solar pipeline (7).JPG', d:'ASDF Kasilu SHG solar pipeline (7)' },
+      { c:'water', t:'ASDF Kasilu SHG solar pipeline (8)', p:'Water Access/Solar Pipelines/ASDF_Kasilu SHG_solar pipeline (8).jpg', d:'ASDF Kasilu SHG solar pipeline (8)' },
+      { c:'water', t:'ASDF Kasilu SHG solar pipeline (9)', p:'Water Access/Solar Pipelines/ASDF_Kasilu SHG_solar pipeline (9).jpg', d:'ASDF Kasilu SHG solar pipeline (9)' },
+      { c:'water', t:'ASDF Solar Pipelines (1)', p:'Water Access/Solar Pipelines/ASDF_Solar Pipelines (1).JPG', d:'ASDF Solar Pipelines (1)' },
+      { c:'water', t:'ASDF Solar Pipelines (2)', p:'Water Access/Solar Pipelines/ASDF_Solar Pipelines (2).JPG', d:'ASDF Solar Pipelines (2)' },
+      { c:'water', t:'ASDF Solar Pipelines (3)', p:'Water Access/Solar Pipelines/ASDF_Solar Pipelines (3).JPG', d:'ASDF Solar Pipelines (3)' },
+      { c:'water', t:'ASDF Solar Pipelines (4)', p:'Water Access/Solar Pipelines/ASDF_Solar Pipelines (4).JPG', d:'ASDF Solar Pipelines (4)' },
+      { c:'water', t:'ASDF Solar Pipelines (5)', p:'Water Access/Solar Pipelines/ASDF_Solar Pipelines (5).JPG', d:'ASDF Solar Pipelines (5)' },
+      { c:'water', t:'ASDF Solar Pipelines (6)', p:'Water Access/Solar Pipelines/ASDF_Solar Pipelines (6).JPG', d:'ASDF Solar Pipelines (6)' },
+      { c:'water', t:'ASDF Solar Pipelines (7)', p:'Water Access/Solar Pipelines/ASDF_Solar Pipelines (7).JPG', d:'ASDF Solar Pipelines (7)' },
+      { c:'water', t:'ASDF Solar Pipelines (8)', p:'Water Access/Solar Pipelines/ASDF_Solar Pipelines (8).JPG', d:'ASDF Solar Pipelines (8)' },
+      { c:'water', t:'ASDF Solar Project (1)', p:'Water Access/Solar Pipelines/ASDF_Solar Project (1).JPG', d:'ASDF Solar Project (1)' },
+      { c:'water', t:'ASDF Solar Project (11)', p:'Water Access/Solar Pipelines/ASDF_Solar Project (11).JPG', d:'ASDF Solar Project (11)' },
+      { c:'water', t:'ASDF Solar Project (14)', p:'Water Access/Solar Pipelines/ASDF_Solar Project (14).JPG', d:'ASDF Solar Project (14)' },
+      { c:'water', t:'ASDF Solar Project (15)', p:'Water Access/Solar Pipelines/ASDF_Solar Project (15).JPG', d:'ASDF Solar Project (15)' },
+      { c:'water', t:'ASDF Yanzui Maithya SHG solar pipeline (1)', p:'Water Access/Solar Pipelines/ASDF_Yanzui Maithya SHG_solar pipeline (1).JPG', d:'ASDF Yanzui Maithya SHG solar pipeline (1)' },
+      { c:'water', t:'ASDF Yanzui Maithya SHG solar pipeline (10)', p:'Water Access/Solar Pipelines/ASDF_Yanzui Maithya SHG_solar pipeline (10).JPG', d:'ASDF Yanzui Maithya SHG solar pipeline (10)' },
+      { c:'water', t:'ASDF Yanzui Maithya SHG solar pipeline (11)', p:'Water Access/Solar Pipelines/ASDF_Yanzui Maithya SHG_solar pipeline (11).JPG', d:'ASDF Yanzui Maithya SHG solar pipeline (11)' },
+      { c:'water', t:'ASDF Yanzui Maithya SHG solar pipeline (12)', p:'Water Access/Solar Pipelines/ASDF_Yanzui Maithya SHG_solar pipeline (12).JPG', d:'ASDF Yanzui Maithya SHG solar pipeline (12)' },
+      { c:'water', t:'ASDF Yanzui Maithya SHG solar pipeline (13)', p:'Water Access/Solar Pipelines/ASDF_Yanzui Maithya SHG_solar pipeline (13).JPG', d:'ASDF Yanzui Maithya SHG solar pipeline (13)' },
+      { c:'water', t:'ASDF Yanzui Maithya SHG solar pipeline (8)', p:'Water Access/Solar Pipelines/ASDF_Yanzui Maithya SHG_solar pipeline (8).JPG', d:'ASDF Yanzui Maithya SHG solar pipeline (8)' },
+      { c:'water', t:'ASDF Yanzui Maithya SHG solar pipeline (9)', p:'Water Access/Solar Pipelines/ASDF_Yanzui Maithya SHG_solar pipeline (9).JPG', d:'ASDF Yanzui Maithya SHG solar pipeline (9)' },
+    ];
+
+    function esc(x){ return String(x).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    grid.innerHTML = GALLERY.map(g => {
+      const url = A + encodeURI(g.p);
+      const cls = 'gal-item' + (g.s ? ' ' + g.s : '');
+      return '<div class="' + cls + '" data-cat="' + g.c + '" data-title="' + esc(g.t) + '" data-desc="' + esc(g.d) + '">' +
+               '<div class="gal-img-wrap"><img src="' + url + '" alt="' + esc(g.t) + '" loading="lazy"></div>' +
+               '<div class="gal-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>' + esc(g.t) + '</span></div>' +
+             '</div>';
+    }).join('');
+    { const pc = document.getElementById('photoCount'); if (pc) pc.textContent = GALLERY.length; }
+
+    // ── Layout toolbar ──
     let currentView = 'masonry', currentCols = 3, currentSize = 'medium';
 
     function applyView() {
@@ -418,22 +622,64 @@
 
     applyView(); // apply defaults
 
-    // ── Gallery filter ──
+    // ── Gallery filter & Pagination ──
     const items = [...document.querySelectorAll('.gal-item')];
+    let currentCat = 'all';
+    let currentPage = 1;
+    const ITEMS_PER_PAGE = 24;
+
+    function renderGallery(reset = false) {
+      if (reset) currentPage = 1;
+      
+      const filteredItems = items.filter(item => currentCat === 'all' || item.dataset.cat === currentCat);
+      const itemsToShow = currentPage * ITEMS_PER_PAGE;
+      
+      items.forEach(item => {
+        item.style.display = 'none';
+        item.classList.remove('gal-appear');
+      });
+
+      filteredItems.forEach((item, index) => {
+        if (index < itemsToShow) {
+          item.style.display = '';
+          // brief delay so animation retriggers if needed
+          setTimeout(() => item.classList.add('gal-appear'), 10);
+        }
+      });
+
+      const pc = document.getElementById('photoCount'); 
+      if (pc) pc.textContent = `${Math.min(itemsToShow, filteredItems.length)} of ${filteredItems.length}`;
+
+      const loadBtn = document.getElementById('loadMoreBtn');
+      if (loadBtn) {
+        if (itemsToShow >= filteredItems.length) {
+          loadBtn.style.display = 'none';
+        } else {
+          loadBtn.style.display = '';
+          loadBtn.innerHTML = '<i class="fa-solid fa-images"></i> Load More Photos';
+          loadBtn.disabled = false;
+        }
+      }
+    }
+
     document.querySelectorAll('.gal-filter').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.gal-filter').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        const cat = btn.dataset.cat;
-        let cnt = 0;
-        items.forEach(item => {
-          const show = cat === 'all' || item.dataset.cat === cat;
-          item.style.display = show ? '' : 'none';
-          if (show) { item.classList.add('gal-appear'); cnt++; }
-        });
-        const pc = document.getElementById('photoCount'); if (pc) pc.textContent = cnt;
+        currentCat = btn.dataset.cat;
+        renderGallery(true);
       });
     });
+
+    const loadBtn = document.getElementById('loadMoreBtn');
+    if (loadBtn) {
+      loadBtn.addEventListener('click', function() {
+        currentPage++;
+        renderGallery();
+      });
+    }
+
+    renderGallery(true); // Initial setup
 
     // ── Lightbox ──
     const lb       = document.getElementById('galLightbox');
@@ -443,9 +689,10 @@
     const lbCount  = document.getElementById('galLbCounter');
     let visible = [], lbIdx = 0;
 
-    function openLb(idx) {
+    function openLb(clickedItem) {
       visible = items.filter(i => i.style.display !== 'none');
-      lbIdx   = idx;
+      lbIdx = visible.indexOf(clickedItem);
+      if (lbIdx === -1) return;
       showLb();
       lb.classList.add('open');
       document.body.classList.add('lb-open');
@@ -478,15 +725,62 @@
       if (e.key === 'Escape')     closeLb();
     });
 
-    items.forEach((item, i) => {
-      item.addEventListener('click', () => openLb(i));
+    items.forEach(item => {
+      item.addEventListener('click', () => openLb(item));
     });
 
-    // ── Load more (no-op demo) ──
-    document.getElementById('loadMoreBtn').addEventListener('click', function() {
-      this.innerHTML = '<i class="fa-solid fa-check"></i> All Photos Loaded';
-      this.disabled = true;
+    // ── Video modal ──
+    const vModal = document.getElementById('videoModal');
+    const vFrame = document.getElementById('videoModalFrame');
+
+    function openVideo(id, start) {
+      const params = 'autoplay=1&rel=0' + (start ? '&start=' + start : '');
+      vFrame.innerHTML = '<iframe src="https://www.youtube.com/embed/' + id + '?' + params +
+        '" title="ASDF video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      vModal.classList.add('open');
+      document.body.classList.add('lb-open');
+    }
+
+    function closeVideo() {
+      vModal.classList.remove('open');
+      document.body.classList.remove('lb-open');
+      vFrame.innerHTML = ''; // stop playback
+    }
+
+    document.querySelectorAll('.video-card').forEach(card => {
+      card.addEventListener('click', () => openVideo(card.dataset.yt, card.dataset.start));
+    });
+    document.getElementById('videoModalClose').addEventListener('click', closeVideo);
+    vModal.querySelector('.video-modal-backdrop').addEventListener('click', closeVideo);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && vModal.classList.contains('open')) closeVideo();
     });
   </script>
+  <script src="accessibility.js"></script>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+  <script>
+    (function(){
+      const b = document.getElementById('backToTop');
+      if(b){
+        window.addEventListener('scroll', () => b.classList.toggle('visible', window.scrollY > 400));
+        b.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      }
+    })();
+  </script>
+<script src="translate.js"></script>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254798623130" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.81 11.81 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
 </body>
+
 </html>

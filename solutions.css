@@ -238,3 +238,23 @@
     padding: 24px;
   }
 }
+
+/* ===== Real photos in solution bodies ===== */
+.solution-body .focus-img,
+.solution-body .body-img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 6px 0 26px;
+  box-shadow: 0 8px 24px rgba(94, 16, 98, 0.12);
+  display: block;
+}
+
+.solution-body h4 {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--primary-purple, #5e1062);
+  margin: 26px 0 10px;
+}

@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/ASDF-high-rez.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="accessibility.css">
+  <link rel="stylesheet" href="about.css">
 </head>
 <body>
 
@@ -35,7 +37,6 @@
           </button>
           <div class="lang-dropdown" id="langDropdown">
             <button class="lang-option active" data-lang="en" data-flag="&#127468;&#127463;" data-label="EN">&#127468;&#127463; English</button>
-            <button class="lang-option" data-lang="fr" data-flag="&#127467;&#127479;" data-label="FR">&#127467;&#127479; Français</button>
             <button class="lang-option" data-lang="sw" data-flag="&#127472;&#127466;" data-label="SW">&#127472;&#127466; Kiswahili</button>
           </div>
         </div>
@@ -96,8 +97,8 @@
           </svg>
         </button>
         <div class="donate-banner-wrapper">
-          <a href="index.html#donate" class="donate-btn">
-            <span>VOLUNTEER</span>
+          <a href="donate.html" class="donate-btn">
+            <span>Donate</span>
           </a>
         </div>
       </div>
@@ -112,7 +113,7 @@
 
   <!-- Inner Page Hero -->
   <section class="inner-hero">
-    <div class="inner-hero-bg" style="background-image:url('images/hero-2.png');"></div>
+    <div class="inner-hero-bg" style="background-image:url('images/asdf-web/Water%20Access/Sand%20dams/ASDF_Complete%20SDs%20(44).JPG');"></div>
     <h1 class="inner-hero-title">About Us</h1>
     <p class="inner-hero-breadcrumb">
       <a href="index.html">Home</a>
@@ -121,11 +122,178 @@
     </p>
   </section>
 
-  <!-- Page content placeholder -->
-  <section style="padding: 80px 30px; max-width: 900px; margin: 0 auto;">
-    <p style="color: var(--text-light); font-size: 16px; line-height: 1.8;">
-      Africa Sand Dam Foundation (ASDF) is a registered Kenyan NGO which was formed in 2010, working in Makueni, Machakos, and Kitui counties in the Republic of Kenya. The organisation's mission is to create food, water, and income-secure communities across the arid and semi-arid lands of Africa.
-    </p>
+  <!-- Intro / Who We Are -->
+  <section class="about-intro">
+    <div class="about-wrap">
+      <div class="about-intro-grid">
+        <div class="about-intro-text">
+          <span class="section-subtitle">Who We Are</span>
+          <h2>Building <span>food, water &amp; income-secure</span> communities</h2>
+          <p>Africa Sand Dam Foundation (ASDF) is a registered Kenyan NGO working in Makueni, Machakos, and Kitui counties in the Republic of Kenya. Our mission is to create food, water, and income-secure communities across the arid and semi-arid lands of Africa.</p>
+          <p>We work hand in hand with community self-help groups to harvest and conserve soil and water — turning seasonal rivers and rainfall into a reliable, year-round resource that transforms lives for generations.</p>
+        </div>
+        <div class="about-intro-visual">
+          <img class="about-img" src="images/asdf-web/Water%20Access/Sand%20dams/Kandu%20Kaseveni%20SHG%20(7).JPG" alt="Community members at a sand dam site in Kenya">
+          <div class="about-intro-badge">
+            <span class="badge-number">2010</span>
+            <span class="badge-text">Serving communities since</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section class="about-vm">
+    <div class="about-wrap">
+      <div class="about-vm-grid">
+        <div class="about-vm-card">
+          <div class="about-vm-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#5e1062" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="6" cy="18" r="4"></circle>
+              <circle cx="18" cy="18" r="4"></circle>
+              <path d="M6 14v-4a6 6 0 0 1 12 0v4"></path>
+              <path d="M12 10V6"></path>
+            </svg>
+          </div>
+          <h3>Our Vision</h3>
+          <p>Soil and water conservation in drylands enables millions of rural communities to transform their own lives.</p>
+        </div>
+        <div class="about-vm-card">
+          <div class="about-vm-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#5e1062" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 22V4c0-.5.2-1 .6-1.4C5 2.2 5.5 2 6 2h6l2 3h6c.5 0 1 .2 1.4.6.4.4.6.9.6 1.4v7c0 .5-.2 1-.6 1.4-.4.4-.9.6-1.4.6h-8l-2-3H6v7H4z"></path>
+            </svg>
+          </div>
+          <h3>Our Mission</h3>
+          <p>To support the resilience of community self-help groups (SHGs) through soil and water conservation to gain sustainable access to safe water, natural resources, food production and markets in the arid and semi-arid lands of Africa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where We Work -->
+  <section class="about-reach">
+    <div class="about-wrap">
+      <div class="about-section-head">
+        <span class="section-subtitle">Our Reach</span>
+        <h2>Where <span>We Work</span></h2>
+        <p>From our roots in Kenya, our work has grown across the drylands of Africa and beyond — implementing sand dams, rock catchments, school water tanks, solar-powered pipeline systems, soil and water conservation initiatives, and agroforestry activities.</p>
+      </div>
+      <div class="about-country-grid">
+        <div class="about-country"><span class="flag">&#127472;&#127466;</span><span class="name">Kenya</span></div>
+        <div class="about-country"><span class="flag">&#127474;&#127468;</span><span class="name">Madagascar</span></div>
+        <div class="about-country"><span class="flag">&#127474;&#127487;</span><span class="name">Mozambique</span></div>
+        <div class="about-country"><span class="flag">&#127466;&#127481;</span><span class="name">Ethiopia</span></div>
+        <div class="about-country"><span class="flag">&#127481;&#127487;</span><span class="name">Tanzania</span></div>
+        <div class="about-country"><span class="flag">&#127474;&#127484;</span><span class="name">Malawi</span></div>
+        <div class="about-country"><span class="flag">&#127487;&#127484;</span><span class="name">Zimbabwe</span></div>
+        <div class="about-country"><span class="flag">&#127480;&#127476;</span><span class="name">Somalia</span></div>
+        <div class="about-country"><span class="flag">&#127470;&#127475;</span><span class="name">India</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Approach -->
+  <section class="about-approach">
+    <div class="about-wrap">
+      <div class="about-approach-grid">
+        <div class="about-approach-visual">
+          <div class="about-split">
+            <div class="about-split-half community">
+              <span class="pct">50%</span>
+              <span class="who">Community</span>
+            </div>
+            <div class="about-split-half asdf">
+              <span class="pct">50%</span>
+              <span class="who">ASDF</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-approach-text">
+          <span class="section-subtitle">Community-Led</span>
+          <h2>A <span>50&ndash;50 partnership</span></h2>
+          <p>Every project is built on a 50&ndash;50 partnership model. Community members contribute local materials and labour, while ASDF supplies the technical expertise and hardware materials.</p>
+          <p>This shared ownership ensures that the infrastructure communities help build is infrastructure they value, maintain, and sustain for generations to come.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capacity Strengthening -->
+  <section class="about-capacity">
+    <div class="about-wrap">
+      <div class="about-section-head">
+        <span class="section-subtitle">Capacity Strengthening</span>
+        <h2>Training that <span>builds resilience</span></h2>
+        <p>Alongside water and conservation infrastructure, we equip communities with the knowledge and skills they need to thrive.</p>
+      </div>
+      <div class="about-capacity-grid">
+        <div class="about-capacity-item">
+          <span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+          <span class="label">Group savings</span>
+        </div>
+        <div class="about-capacity-item">
+          <span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+          <span class="label">Climate-smart agriculture</span>
+        </div>
+        <div class="about-capacity-item">
+          <span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+          <span class="label">WASH education</span>
+        </div>
+        <div class="about-capacity-item">
+          <span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+          <span class="label">Menstrual hygiene</span>
+        </div>
+        <div class="about-capacity-item">
+          <span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+          <span class="label">Livestock management</span>
+        </div>
+        <div class="about-capacity-item">
+          <span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+          <span class="label">Environmental conservation</span>
+        </div>
+        <div class="about-capacity-item">
+          <span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+          <span class="label">Energy-efficient stove construction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership -->
+  <section class="about-team">
+    <div class="about-wrap">
+      <div class="about-section-head">
+        <span class="section-subtitle">Our Leadership</span>
+        <h2>The people <span>behind ASDF</span></h2>
+      </div>
+      <div class="about-team-grid">
+        <div class="about-team-card">
+          <div class="about-team-avatar">CK</div>
+          <h3>Cornelius Kyalo</h3>
+          <span class="role">Executive Director</span>
+        </div>
+        <div class="about-team-card">
+          <div class="about-team-avatar">AM</div>
+          <h3>Andrew Musila</h3>
+          <span class="role">Development Director</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="about-cta">
+    <h2>Partner with us</h2>
+    <p>Together we can help millions of rural communities in Africa's drylands transform their own lives. Get in touch to learn how you can support our work.</p>
+    <a href="contact.html" class="about-cta-btn">
+      <span>Get Involved</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
   </section>
 
   <!-- Footer -->
@@ -198,6 +366,32 @@
     }
   </script>
 <script src="search.js"></script>
+<script src="accessibility.js"></script>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+  <script>
+    (function(){
+      const b = document.getElementById('backToTop');
+      if(b){
+        window.addEventListener('scroll', () => b.classList.toggle('visible', window.scrollY > 400));
+        b.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      }
+    })();
+  </script>
+<script src="translate.js"></script>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254798623130" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.81 11.81 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
 </body>
+
 </html>
 

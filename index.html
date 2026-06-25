@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/ASDF-high-rez.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="accessibility.css">
 </head>
 <body>
 
@@ -37,7 +38,6 @@
           </button>
           <div class="lang-dropdown" id="langDropdown">
             <button class="lang-option active" data-lang="en" data-flag="&#127468;&#127463;" data-label="EN">&#127468;&#127463; English</button>
-            <button class="lang-option" data-lang="fr" data-flag="&#127467;&#127479;" data-label="FR">&#127467;&#127479; Français</button>
             <button class="lang-option" data-lang="sw" data-flag="&#127472;&#127466;" data-label="SW">&#127472;&#127466; Kiswahili</button>
           </div>
         </div>
@@ -100,8 +100,8 @@
           </svg>
         </button>
         <div class="donate-banner-wrapper">
-          <a href="#donate" class="donate-btn">
-            <span>VOLUNTEER</span>
+          <a href="donate.html" class="donate-btn">
+            <span>Donate</span>
           </a>
         </div>
       </div>
@@ -133,7 +133,7 @@
           </div>
           <div class="slide-image-col">
             <div class="slide-image-card">
-              <img src="images/hero-1.png" alt="Sand Dams">
+              <img src="images/asdf-web/Water%20Access/Sand%20dams/ASDF_Complete%20SDs%20(24).JPG" alt="Sand Dams">
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@
           </div>
           <div class="slide-image-col">
             <div class="slide-image-card">
-              <img src="images/hero-2.png" alt="Community">
+              <img src="images/asdf-web/Food%20Production%20and%20Livelihoods/Drought%20Tolerant%20Seeds/ASDF_Kangila%20women%20SHG_Seed%20distribution%20(2).JPG" alt="Community">
             </div>
           </div>
         </div>
@@ -173,7 +173,47 @@
           </div>
           <div class="slide-image-col">
             <div class="slide-image-card">
-              <img src="images/hero-3.png" alt="Schools">
+              <img src="images/asdf-web/Water%20Access/School%20Water%20Tanks/ASDF_Ngaa%20Pri%20WT%20(1).JPG" alt="Schools">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <div class="slide-inner">
+          <div class="slide-text-col">
+            <h1 class="slide-title"><span class="title-accent">Restoring</span> the Environment</h1>
+            <div class="slide-tag-row">
+              <span class="slide-tag-line"></span>
+              <span class="slide-tag">Conservation</span>
+            </div>
+            <p class="slide-desc">Promoting agro-forestry and sustainable farming to restore degraded lands and improve livelihoods.</p>
+            <a href="solution-environmental-conservation.html" class="slide-cta">Learn More</a>
+          </div>
+          <div class="slide-image-col">
+            <div class="slide-image-card">
+              <img src="images/asdf-web/Environmental%20Conservation%20and%20NRM/Agro-Forestry/DSC_7185.JPG" alt="Conservation">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide">
+        <div class="slide-inner">
+          <div class="slide-text-col">
+            <h1 class="slide-title"><span class="title-accent">Innovative</span> Solar Pumping</h1>
+            <div class="slide-tag-row">
+              <span class="slide-tag-line"></span>
+              <span class="slide-tag">Solar Energy</span>
+            </div>
+            <p class="slide-desc">Harnessing solar power to pump clean water closer to homes, saving time and energy for families.</p>
+            <a href="solution-water-access.html" class="slide-cta">Explore Solutions</a>
+          </div>
+          <div class="slide-image-col">
+            <div class="slide-image-card">
+              <img src="images/asdf-web/Water%20Access/Solar%20Pipelines/ASDF_Solar%20Pipelines%20(1).JPG" alt="Solar Pumping">
             </div>
           </div>
         </div>
@@ -185,6 +225,8 @@
           <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
           <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
           <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+          <button class="indicator" data-slide="3" aria-label="Go to slide 4"></button>
+          <button class="indicator" data-slide="4" aria-label="Go to slide 5"></button>
         </div>
         <div class="slider-arrows">
           <button class="arrow-btn" id="prevBtn" aria-label="Previous slide">
@@ -227,17 +269,17 @@
 
           <!-- Large oval image -->
           <div class="visual-oval-large">
-            <div class="oval-bg" style="background-image: url('images/hero-1.png');"></div>
+            <div class="oval-bg" style="background-image: url('images/asdf-web/Water%20Access/Sand%20dams/ASDF_Complete%20SDs%20(43).JPG');"></div>
           </div>
 
           <!-- Small oval image -->
           <div class="visual-oval-small">
-            <div class="oval-bg" style="background-image: url('images/hero-2.png');"></div>
+            <div class="oval-bg" style="background-image: url('images/asdf-web/Hygiene%20and%20Sanitation/ASDF_WASH%20Training%20(2).JPG');"></div>
           </div>
 
           <!-- Experience badge -->
           <div class="experience-badge">
-            <span class="badge-number">25+</span>
+            <span class="badge-number">15+</span>
             <span class="badge-label">Years Of<br>Experience</span>
           </div>
 
@@ -313,12 +355,7 @@
         <!-- Cell 1 -->
         <div class="reach-cell">
           <div class="cell-icon">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
+            <img src="images/icons/community-members-reached.svg" alt="" width="44" height="44">
           </div>
           <div class="cell-number" data-target="1100000" data-suffix="M+">0</div>
           <div class="cell-label">COMMUNITY MEMBERS REACHED</div>
@@ -327,14 +364,7 @@
         <!-- Cell 2 -->
         <div class="reach-cell">
           <div class="cell-icon">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="6" width="20" height="12" rx="2"></rect>
-              <path d="M6 18V6"></path>
-              <path d="M10 18V6"></path>
-              <path d="M14 18V6"></path>
-              <path d="M18 18V6"></path>
-              <path d="M2 12h20"></path>
-            </svg>
+            <img src="images/icons/sand-dams-constructed.svg" alt="" width="44" height="44">
           </div>
           <div class="cell-number" data-target="734" data-suffix="+">0</div>
           <div class="cell-label">SAND DAMS CONSTRUCTED</div>
@@ -343,14 +373,7 @@
         <!-- Cell 3 -->
         <div class="reach-cell">
           <div class="cell-icon">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 10v12"></path>
-              <path d="M17 10v12"></path>
-              <path d="M5 22h14"></path>
-              <path d="M12 2v8"></path>
-              <path d="M12 10c2 0 4-1 4-3s-2-3-4-3-4 1-4 3 2 3 4 3z"></path>
-              <path d="M16 7h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3"></path>
-            </svg>
+            <img src="images/icons/shallow-wells-constructed.svg" alt="" width="44" height="44">
           </div>
           <div class="cell-number" data-target="598" data-suffix="+">0</div>
           <div class="cell-label">SHALLOW WELLS CONSTRUCTED</div>
@@ -359,13 +382,7 @@
         <!-- Cell 4 -->
         <div class="reach-cell">
           <div class="cell-icon">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22V12"></path>
-              <path d="M18 12V6a6 6 0 0 0-12 0v6"></path>
-              <rect x="5" y="12" width="14" height="8" rx="1"></rect>
-              <path d="M9 12v8"></path>
-              <path d="M15 12v8"></path>
-            </svg>
+            <img src="images/icons/school-water-tanks-constructed.svg" alt="" width="44" height="44">
           </div>
           <div class="cell-number" data-target="346" data-suffix="+">0</div>
           <div class="cell-label">SCHOOL WATER TANKS CONSTRUCTED</div>
@@ -374,17 +391,7 @@
         <!-- Cell 5 -->
         <div class="reach-cell">
           <div class="cell-icon">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2v6"></path>
-              <path d="M12 18v4"></path>
-              <path d="M4.93 4.93l4.24 4.24"></path>
-              <path d="M14.83 14.83l4.24 4.24"></path>
-              <path d="M2 12h6"></path>
-              <path d="M16 12h6"></path>
-              <path d="M19.07 4.93l-4.24 4.24"></path>
-              <path d="M9.17 14.83l-4.24 4.24"></path>
-              <circle cx="12" cy="12" r="3"></circle>
-            </svg>
+            <img src="images/icons/rock-catchments-constructed.svg" alt="" width="44" height="44">
           </div>
           <div class="cell-number" data-target="17" data-suffix="">0</div>
           <div class="cell-label">ROCK CATCHMENTS CONSTRUCTED</div>
@@ -393,10 +400,7 @@
         <!-- Cell 6 -->
         <div class="reach-cell">
           <div class="cell-icon">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="5"></circle>
-              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
-            </svg>
+            <img src="images/icons/solar-pipeline-projects-installed.svg" alt="" width="44" height="44">
           </div>
           <div class="cell-number" data-target="734" data-suffix="+">0</div>
           <div class="cell-label">SOLAR PIPELINE PROJECTS INSTALLED</div>
@@ -405,12 +409,7 @@
         <!-- Cell 7 -->
         <div class="reach-cell">
           <div class="cell-icon">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22V12"></path>
-              <path d="M12 12a5 5 0 0 0 5-5c0-2.8-2.2-5-5-5s-5 2.2-5 5a5 5 0 0 0 5 5z"></path>
-              <path d="M17 12a4 4 0 0 0 4-4c0-2.2-1.8-4-4-4"></path>
-              <path d="M7 12a4 4 0 0 1-4-4c0-2.2 1.8-4 4-4"></path>
-            </svg>
+            <img src="images/icons/trees-planted.svg" alt="" width="44" height="44">
           </div>
           <div class="cell-number" data-target="1000000" data-suffix="M+">0</div>
           <div class="cell-label">TREES PLANTED</div>
@@ -419,14 +418,7 @@
         <!-- Cell 8 -->
         <div class="reach-cell">
           <div class="cell-icon">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 20V10"></path>
-              <path d="M12 20V4"></path>
-              <path d="M6 20v-6"></path>
-              <path d="M2 20h20"></path>
-              <path d="M12 4l3 3"></path>
-              <path d="M12 4L9 7"></path>
-            </svg>
+            <img src="images/icons/income-generated-by-community-members.svg" alt="" width="44" height="44">
           </div>
           <div class="cell-number" data-target="28000000" data-suffix="M+">0</div>
           <div class="cell-label">INCOME GENERATED BY COMMUNITY MEMBERS</div>
@@ -514,146 +506,28 @@
 
           <!-- Set 1 -->
           <div class="marquee-set" aria-hidden="false">
-
-            <!-- The Water Project -->
-            <div class="partner-logo">
-              <svg width="160" height="52" viewBox="0 0 260 85" xmlns="http://www.w3.org/2000/svg">
-                <!-- Drop outline filled with dot-people -->
-                <path d="M42,72 C20,72 6,57 6,42 C6,25 42,2 42,2 C42,2 78,25 78,42 C78,57 64,72 42,72Z" fill="#d0e8f5"/>
-                <!-- Dot cluster inside drop -->
-                <circle cx="30" cy="35" r="3" fill="#4a9fc8"/><circle cx="38" cy="28" r="3" fill="#4a9fc8"/><circle cx="47" cy="25" r="3" fill="#4a9fc8"/>
-                <circle cx="56" cy="30" r="3" fill="#4a9fc8"/><circle cx="61" cy="40" r="3" fill="#4a9fc8"/><circle cx="55" cy="50" r="3" fill="#4a9fc8"/>
-                <circle cx="44" cy="55" r="3" fill="#4a9fc8"/><circle cx="33" cy="50" r="3" fill="#4a9fc8"/><circle cx="26" cy="44" r="3" fill="#4a9fc8"/>
-                <circle cx="42" cy="42" r="3" fill="#4a9fc8"/><circle cx="35" cy="42" r="3" fill="#4a9fc8"/><circle cx="49" cy="42" r="3" fill="#4a9fc8"/>
-                <!-- Africa shape inside drop -->
-                <path d="M37,32 C34,33 32,36 33,40 C34,44 36,47 39,49 C41,50 43,50 45,49 C47,47 49,44 50,41 C51,37 49,33 46,32 C43,31 40,31 37,32Z" fill="#f4a621"/>
-                <!-- Person figure right of drop -->
-                <circle cx="88" cy="22" r="5" fill="#4a9fc8"/>
-                <line x1="88" y1="27" x2="88" y2="48" stroke="#4a9fc8" stroke-width="3" stroke-linecap="round"/>
-                <line x1="88" y1="34" x2="82" y2="42" stroke="#4a9fc8" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="88" y1="34" x2="94" y2="42" stroke="#4a9fc8" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="88" y1="48" x2="83" y2="60" stroke="#4a9fc8" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="88" y1="48" x2="93" y2="60" stroke="#4a9fc8" stroke-width="2.5" stroke-linecap="round"/>
-                <!-- Text -->
-                <text x="100" y="38" font-family="'Plus Jakarta Sans',sans-serif" font-size="13" font-weight="400" fill="#2a7db5">The</text>
-                <text x="117" y="38" font-family="'Plus Jakarta Sans',sans-serif" font-size="17" font-weight="800" fill="#2a7db5">Water</text>
-                <text x="100" y="56" font-family="'Plus Jakarta Sans',sans-serif" font-size="16" font-weight="400" fill="#2a7db5">Project</text>
-              </svg>
-            </div>
-
-            <!-- Sand Dams Worldwide -->
-            <div class="partner-logo">
-              <svg width="140" height="52" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20,40 C35,25 55,25 70,40 C55,55 35,55 20,40 Z" fill="#2d3142" opacity="0.9"/>
-                <circle cx="45" cy="40" r="10" fill="#e76f51"/>
-                <text x="80" y="43" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#2d3142">SAND DAMS</text>
-                <text x="80" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#e76f51">WORLDWIDE</text>
-              </svg>
-            </div>
-
-            <!-- Just a Drop -->
-            <div class="partner-logo">
-              <svg width="130" height="52" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30,55 C30,30 50,20 50,20 C50,20 70,30 70,55 C70,66 61,75 50,75 C39,75 30,66 30,55 Z" fill="#00b4d8"/>
-                <text x="85" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" fill="#0077b6">Just</text>
-                <text x="85" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="400" fill="#00b4d8">a Drop</text>
-              </svg>
-            </div>
-
-            <!-- Archenova -->
-            <div class="partner-logo">
-              <svg width="130" height="52" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                <rect x="15" y="15" width="50" height="50" rx="6" fill="#1d3557"/>
-                <text x="24" y="47" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#f1faee">a</text>
-                <text x="75" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="800" fill="#1d3557">arche</text>
-                <text x="75" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="400" fill="#e63946">nova</text>
-              </svg>
-            </div>
-
-            <!-- PAH -->
-            <div class="partner-logo">
-              <svg width="110" height="52" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                <path d="M40,20 C25,20 15,32 15,48 C15,65 40,75 40,75 C40,75 65,65 65,48 C65,32 55,20 40,20 Z" fill="#0096c7" opacity="0.3"/>
-                <path d="M40,27 C30,27 23,35 23,46 C23,58 40,67 40,67 C40,67 57,58 57,46 C57,35 50,27 40,27 Z" fill="#0096c7"/>
-                <text x="80" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#03045e" letter-spacing="2">pah</text>
-              </svg>
-            </div>
-
-            <!-- ERM Foundation -->
-            <div class="partner-logo">
-              <svg width="120" height="52" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="40" cy="40" r="25" fill="#f77f00" opacity="0.15"/>
-                <circle cx="40" cy="40" r="18" fill="none" stroke="#f77f00" stroke-width="4"/>
-                <path d="M32,40 L48,40" stroke="#f77f00" stroke-width="4" stroke-linecap="round"/>
-                <path d="M40,32 L40,48" stroke="#f77f00" stroke-width="4" stroke-linecap="round"/>
-                <text x="76" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#2b2d42">ERM</text>
-                <text x="72" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#8d99ae">FOUNDATION</text>
-              </svg>
-            </div>
-
+            <div class="partner-logo"><img src="images/partners/the-water-project.png" alt="The Water Project"></div>
+            <div class="partner-logo"><img src="images/partners/sand-dams-worldwide.png" alt="Sand Dams Worldwide"></div>
+            <div class="partner-logo"><img src="images/partners/just-a-drop.png" alt="Just a Drop"></div>
+            <div class="partner-logo"><img src="images/partners/arche-nova.png" alt="arche noVa"></div>
+            <div class="partner-logo"><img src="images/partners/pah.png" alt="Polish Humanitarian Action"></div>
+            <div class="partner-logo"><img src="images/partners/unicef.png" alt="UNICEF"></div>
+            <div class="partner-logo"><img src="images/partners/charitable-foundation.jpg" alt="Charitable Foundation"></div>
+            <div class="partner-logo"><img src="images/partners/buildaid.png" alt="BuildAid"></div>
+            <div class="partner-logo"><img src="images/partners/shockwave-foundation.png" alt="Shockwave Foundation"></div>
           </div><!-- /set 1 -->
 
           <!-- Set 2 (duplicate for seamless loop) -->
           <div class="marquee-set" aria-hidden="true">
-            <div class="partner-logo">
-              <svg width="160" height="52" viewBox="0 0 260 85" xmlns="http://www.w3.org/2000/svg">
-                <path d="M42,72 C20,72 6,57 6,42 C6,25 42,2 42,2 C42,2 78,25 78,42 C78,57 64,72 42,72Z" fill="#d0e8f5"/>
-                <circle cx="30" cy="35" r="3" fill="#4a9fc8"/><circle cx="38" cy="28" r="3" fill="#4a9fc8"/><circle cx="47" cy="25" r="3" fill="#4a9fc8"/>
-                <circle cx="56" cy="30" r="3" fill="#4a9fc8"/><circle cx="61" cy="40" r="3" fill="#4a9fc8"/><circle cx="55" cy="50" r="3" fill="#4a9fc8"/>
-                <circle cx="44" cy="55" r="3" fill="#4a9fc8"/><circle cx="33" cy="50" r="3" fill="#4a9fc8"/><circle cx="26" cy="44" r="3" fill="#4a9fc8"/>
-                <circle cx="42" cy="42" r="3" fill="#4a9fc8"/><circle cx="35" cy="42" r="3" fill="#4a9fc8"/><circle cx="49" cy="42" r="3" fill="#4a9fc8"/>
-                <path d="M37,32 C34,33 32,36 33,40 C34,44 36,47 39,49 C41,50 43,50 45,49 C47,47 49,44 50,41 C51,37 49,33 46,32 C43,31 40,31 37,32Z" fill="#f4a621"/>
-                <circle cx="88" cy="22" r="5" fill="#4a9fc8"/>
-                <line x1="88" y1="27" x2="88" y2="48" stroke="#4a9fc8" stroke-width="3" stroke-linecap="round"/>
-                <line x1="88" y1="34" x2="82" y2="42" stroke="#4a9fc8" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="88" y1="34" x2="94" y2="42" stroke="#4a9fc8" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="88" y1="48" x2="83" y2="60" stroke="#4a9fc8" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="88" y1="48" x2="93" y2="60" stroke="#4a9fc8" stroke-width="2.5" stroke-linecap="round"/>
-                <text x="100" y="38" font-family="'Plus Jakarta Sans',sans-serif" font-size="13" font-weight="400" fill="#2a7db5">The</text>
-                <text x="117" y="38" font-family="'Plus Jakarta Sans',sans-serif" font-size="17" font-weight="800" fill="#2a7db5">Water</text>
-                <text x="100" y="56" font-family="'Plus Jakarta Sans',sans-serif" font-size="16" font-weight="400" fill="#2a7db5">Project</text>
-              </svg>
-            </div>
-            <div class="partner-logo">
-              <svg width="140" height="52" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20,40 C35,25 55,25 70,40 C55,55 35,55 20,40 Z" fill="#2d3142" opacity="0.9"/>
-                <circle cx="45" cy="40" r="10" fill="#e76f51"/>
-                <text x="80" y="43" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#2d3142">SAND DAMS</text>
-                <text x="80" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#e76f51">WORLDWIDE</text>
-              </svg>
-            </div>
-            <div class="partner-logo">
-              <svg width="130" height="52" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30,55 C30,30 50,20 50,20 C50,20 70,30 70,55 C70,66 61,75 50,75 C39,75 30,66 30,55 Z" fill="#00b4d8"/>
-                <text x="85" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" fill="#0077b6">Just</text>
-                <text x="85" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="400" fill="#00b4d8">a Drop</text>
-              </svg>
-            </div>
-            <div class="partner-logo">
-              <svg width="130" height="52" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                <rect x="15" y="15" width="50" height="50" rx="6" fill="#1d3557"/>
-                <text x="24" y="47" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#f1faee">a</text>
-                <text x="75" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="800" fill="#1d3557">arche</text>
-                <text x="75" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="400" fill="#e63946">nova</text>
-              </svg>
-            </div>
-            <div class="partner-logo">
-              <svg width="110" height="52" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                <path d="M40,20 C25,20 15,32 15,48 C15,65 40,75 40,75 C40,75 65,65 65,48 C65,32 55,20 40,20 Z" fill="#0096c7" opacity="0.3"/>
-                <path d="M40,27 C30,27 23,35 23,46 C23,58 40,67 40,67 C40,67 57,58 57,46 C57,35 50,27 40,27 Z" fill="#0096c7"/>
-                <text x="80" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#03045e" letter-spacing="2">pah</text>
-              </svg>
-            </div>
-            <div class="partner-logo">
-              <svg width="120" height="52" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="40" cy="40" r="25" fill="#f77f00" opacity="0.15"/>
-                <circle cx="40" cy="40" r="18" fill="none" stroke="#f77f00" stroke-width="4"/>
-                <path d="M32,40 L48,40" stroke="#f77f00" stroke-width="4" stroke-linecap="round"/>
-                <path d="M40,32 L40,48" stroke="#f77f00" stroke-width="4" stroke-linecap="round"/>
-                <text x="76" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#2b2d42">ERM</text>
-                <text x="72" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#8d99ae">FOUNDATION</text>
-              </svg>
-            </div>
+            <div class="partner-logo"><img src="images/partners/the-water-project.png" alt="The Water Project"></div>
+            <div class="partner-logo"><img src="images/partners/sand-dams-worldwide.png" alt="Sand Dams Worldwide"></div>
+            <div class="partner-logo"><img src="images/partners/just-a-drop.png" alt="Just a Drop"></div>
+            <div class="partner-logo"><img src="images/partners/arche-nova.png" alt="arche noVa"></div>
+            <div class="partner-logo"><img src="images/partners/pah.png" alt="Polish Humanitarian Action"></div>
+            <div class="partner-logo"><img src="images/partners/unicef.png" alt="UNICEF"></div>
+            <div class="partner-logo"><img src="images/partners/charitable-foundation.jpg" alt="Charitable Foundation"></div>
+            <div class="partner-logo"><img src="images/partners/buildaid.png" alt="BuildAid"></div>
+            <div class="partner-logo"><img src="images/partners/shockwave-foundation.png" alt="Shockwave Foundation"></div>
           </div><!-- /set 2 -->
 
         </div>
@@ -678,7 +552,7 @@
 
         <!-- Card 1 -->
         <article class="news-card">
-          <div class="news-card-bg" style="background-image: url('images/hero-1.png');"></div>
+          <div class="news-card-bg" style="background-image: url('images/asdf-web/Water%20Access/Solar%20Pipelines/ASDF_Solar%20Project%20(11).JPG');"></div>
           <div class="news-card-inner">
             <div class="news-card-top">
               <span class="news-category"><span class="news-dot"></span>Water Access</span>
@@ -692,7 +566,7 @@
 
         <!-- Card 2 -->
         <article class="news-card">
-          <div class="news-card-bg" style="background-image: url('images/hero-2.png');"></div>
+          <div class="news-card-bg" style="background-image: url('images/asdf-web/Environmental%20Conservation%20and%20NRM/Farm%20Terracing/ASDF_Terracing%20(5).JPG');"></div>
           <div class="news-card-inner">
             <div class="news-card-top">
               <span class="news-category"><span class="news-dot"></span>Community</span>
@@ -706,7 +580,7 @@
 
         <!-- Card 3 -->
         <article class="news-card">
-          <div class="news-card-bg" style="background-image: url('images/hero-3.png');"></div>
+          <div class="news-card-bg" style="background-image: url('images/asdf-web/Food%20Production%20and%20Livelihoods/Food%20Production/ASDF_Hydroponic%20Impact%20(4).jpg');"></div>
           <div class="news-card-inner">
             <div class="news-card-top">
               <span class="news-category"><span class="news-dot"></span>Education</span>
@@ -796,7 +670,17 @@
   </button>
 
   <script src="script.js"></script>
-<script src="search.js"></script>
+  <script src="search.js"></script>
+  <script src="accessibility.js"></script>
+<script src="translate.js"></script>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254798623130" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.81 11.81 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
 </body>
+
 </html>
 

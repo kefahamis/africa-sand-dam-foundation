@@ -16,29 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (backToTop) backToTop.classList.toggle('visible', window.scrollY > 400);
   });
 
-  // ── Language Switcher ──
-  const langToggle = document.getElementById('langToggle');
-  const langDropdown = document.getElementById('langDropdown');
-  const langSwitcher = document.getElementById('langSwitcher');
 
-  if (langToggle && langSwitcher) {
-    langToggle.addEventListener('click', (e) => {
-      e.stopPropagation();
-      langSwitcher.classList.toggle('open');
-    });
-
-    document.addEventListener('click', () => langSwitcher.classList.remove('open'));
-
-    document.querySelectorAll('.lang-option').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.lang-option').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        document.querySelector('.lang-flag').textContent  = btn.dataset.flag || btn.textContent.split(' ')[0];
-        document.querySelector('.lang-label').textContent = btn.dataset.label;
-        langSwitcher.classList.remove('open');
-      });
-    });
-  }
 
   if (backToTop) {
     backToTop.addEventListener('click', () => {
