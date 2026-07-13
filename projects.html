@@ -11,6 +11,9 @@
   <link rel="icon" type="image/png" href="images/ASDF-high-rez.png">
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <!-- Leaflet.markercluster CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
   <!-- Font Awesome 6 Free -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <link rel="stylesheet" href="style.css">
@@ -127,13 +130,13 @@
         <span class="stat-dot" style="background:#2e9e5b"></span>
         <span id="countSolar">0</span> Solar Pipelines
       </div>
-      <div class="stat-pill" data-type="WASH Facility">
-        <span class="stat-dot" style="background:#9b59b6"></span>
-        <span id="countWash">0</span> WASH Facilities
-      </div>
       <div class="stat-pill" data-type="Rock Catchment">
         <span class="stat-dot" style="background:#c0392b"></span>
         <span id="countRock">0</span> Rock Catchments
+      </div>
+      <div class="stat-pill" data-type="Road Crossing">
+        <span class="stat-dot" style="background:#7f5539"></span>
+        <span id="countRoad">0</span> Road Crossings
       </div>
     </div>
   </div>
@@ -175,8 +178,8 @@
             <label class="type-check"><input type="checkbox" value="Shallow Well" checked> <span class="type-dot" style="background:#2a7db5"></span> <i class="fa-solid fa-well type-fa" style="color:#2a7db5"></i> Shallow Well</label>
             <label class="type-check"><input type="checkbox" value="School Tank" checked> <span class="type-dot" style="background:#e8920a"></span> <i class="fa-solid fa-school type-fa" style="color:#e8920a"></i> School Tank</label>
             <label class="type-check"><input type="checkbox" value="Solar Pipeline" checked> <span class="type-dot" style="background:#2e9e5b"></span> <i class="fa-solid fa-solar-panel type-fa" style="color:#2e9e5b"></i> Solar Pipeline</label>
-            <label class="type-check"><input type="checkbox" value="WASH Facility" checked> <span class="type-dot" style="background:#9b59b6"></span> <i class="fa-solid fa-hands-holding-water type-fa" style="color:#9b59b6"></i> WASH Facility</label>
             <label class="type-check"><input type="checkbox" value="Rock Catchment" checked> <span class="type-dot" style="background:#c0392b"></span> <i class="fa-solid fa-mountain type-fa" style="color:#c0392b"></i> Rock Catchment</label>
+            <label class="type-check"><input type="checkbox" value="Road Crossing" checked> <span class="type-dot" style="background:#7f5539"></span> <i class="fa-solid fa-road type-fa" style="color:#7f5539"></i> Road Crossing</label>
           </div>
         </div>
 
@@ -220,8 +223,8 @@
         <div class="legend-item"><span class="legend-dot" style="background:#2a7db5"></span> Shallow Well</div>
         <div class="legend-item"><span class="legend-dot" style="background:#e8920a"></span> School Tank</div>
         <div class="legend-item"><span class="legend-dot" style="background:#2e9e5b"></span> Solar Pipeline</div>
-        <div class="legend-item"><span class="legend-dot" style="background:#9b59b6"></span> WASH Facility</div>
         <div class="legend-item"><span class="legend-dot" style="background:#c0392b"></span> Rock Catchment</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#7f5539"></span> Road Crossing</div>
       </div>
     </div>
 
@@ -334,7 +337,10 @@
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Leaflet.markercluster JS -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="search.js"></script>
+  <script src="projects-data.js"></script>
   <script src="projects.js"></script>
   <script src="accessibility.js"></script>
   <script>

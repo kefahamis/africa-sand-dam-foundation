@@ -1,4 +1,7 @@
-/* ── ASDF Projects Map ── */
+/* ── ASDF Projects Map ──
+   Data comes from projects-data.js (window.ASDF_PROJECTS), generated from the
+   ASDF Dams & Tanks Monthly Report tracker. ~1,800 real projects, so map
+   markers are clustered for performance. */
 
 const TYPE_COLORS = {
   'Sand Dam':      '#5e1062',
@@ -7,61 +10,29 @@ const TYPE_COLORS = {
   'Solar Pipeline':'#2e9e5b',
   'WASH Facility': '#9b59b6',
   'Rock Catchment':'#c0392b',
+  'Road Crossing': '#7f5539',
 };
 
-// Rotate through available images (in production replace with real per-project photos)
+// Rotate through available images (placeholder photos until real per-project photos are added)
 const IMGS = ['images/hero-1.png','images/hero-2.png','images/hero-3.png'];
-function imgs(a,b,c){ return [IMGS[a],IMGS[b],IMGS[c]]; }
+function imgsFor(id){ const a=id%3, b=(id+1)%3, c=(id+2)%3; return [IMGS[a],IMGS[b],IMGS[c]]; }
 
-const PROJECTS = [
-  // ── Makueni County ──
-  { id:1,  name:'Nzaui Sand Dam',          images: imgs(0,1,2),          type:'Sand Dam',       county:'Makueni', lat:-1.9132, lng:37.6781, year:2022, community:'Nzaui Community Group',         beneficiaries:1200, desc:'A 4m-high sand dam capturing 18,000m³ of water per season serving 5 villages.' },
-  { id:2,  images: imgs(2,0,1),  name:'Katheka Shallow Well',     type:'Shallow Well',   county:'Makueni', lat:-2.0411, lng:37.5522, year:2021, community:'Katheka Self-Help Group',        beneficiaries:320,  desc:'30m deep well adjacent to sand dam, providing clean water to 320 households.' },
-  { id:3,  images: imgs(0,1,2),  name:'Wote Girls School Tank',   type:'School Tank',    county:'Makueni', lat:-1.7844, lng:37.6328, year:2023, community:'Wote Girls Secondary School',    beneficiaries:480,  desc:'50,000L rainwater tank ensuring year-round water for 480 students.' },
-  { id:4,  images: imgs(1,0,2),  name:'Kibwezi Solar Pipeline',   type:'Solar Pipeline', county:'Makueni', lat:-2.4103, lng:37.9706, year:2024, community:'Kibwezi Water Users Assoc.',     beneficiaries:2100, desc:'3km solar-powered pipeline bringing sand dam water to 7 remote homesteads.' },
-  { id:5,  images: imgs(2,1,0),  name:'Makindu Sand Dam',         type:'Sand Dam',       county:'Makueni', lat:-2.2838, lng:37.8264, year:2020, community:'Makindu Group',                  beneficiaries:950,  desc:'Reinforced sand dam on Makindu River — third in a cascade of dams.' },
-  { id:6,  images: imgs(0,2,1),  name:'Sultan Hamud WASH',        type:'WASH Facility',  county:'Makueni', lat:-2.0422, lng:37.7119, year:2023, community:'Sultan Hamud Primary School',    beneficiaries:560,  desc:'6-door latrine block and handwashing stations serving 560 school children.' },
-  { id:7,  images: imgs(1,2,0),  name:'Mukaa Sand Dam',           type:'Sand Dam',       county:'Makueni', lat:-1.9622, lng:37.5110, year:2019, community:'Mukaa Water Committee',          beneficiaries:780,  desc:'Sand dam and adjacent scooping hole providing drinking water for 3 villages.' },
-  { id:8,  images: imgs(2,0,1),  name:'Mtito Andei Rock Catch.',  type:'Rock Catchment', county:'Makueni', lat:-2.6891, lng:38.1644, year:2021, community:'Mtito Andei Elders Group',       beneficiaries:415,  desc:'Natural granite rock catchment channelling rainwater into 2 storage tanks.' },
-  { id:9,  images: imgs(0,1,2),  name:'Emali Shallow Well',       type:'Shallow Well',   county:'Makueni', lat:-2.0812, lng:37.4998, year:2022, community:'Emali Women\'s Group',           beneficiaries:290,  desc:'25m well drilled in dry riverbed, serving the Emali market area.' },
-  { id:10,  images: imgs(1,0,2), name:'Mbooni School Tank',       type:'School Tank',    county:'Makueni', lat:-1.7631, lng:37.4512, year:2024, community:'Mbooni Primary School',          beneficiaries:320,  desc:'30,000L tank and guttering installed on classroom blocks.' },
-
-  // ── Machakos County ──
-  { id:11,  images: imgs(2,1,0), name:'Masii Sand Dam',           type:'Sand Dam',       county:'Machakos', lat:-1.4601, lng:37.5889, year:2018, community:'Masii Community',                beneficiaries:1500, desc:'Large-scale sand dam serving as anchor for a cascade of 3 downstream structures.' },
-  { id:12,  images: imgs(0,2,1), name:'Kangundo Shallow Well',    type:'Shallow Well',   county:'Machakos', lat:-1.2451, lng:37.3437, year:2020, community:'Kangundo Self-Help Group',        beneficiaries:410,  desc:'Hand-pumped well adjacent to sand dam in seasonal Kabaa River.' },
-  { id:13,  images: imgs(1,2,0), name:'Kathiani WASH Block',      type:'WASH Facility',  county:'Machakos', lat:-1.3814, lng:37.1647, year:2022, community:'Kathiani Primary School',         beneficiaries:640,  desc:'Gender-separated toilet blocks and menstrual hygiene unit for 640 pupils.' },
-  { id:14,  images: imgs(2,0,1), name:'Mutituni Sand Dam',        type:'Sand Dam',       county:'Machakos', lat:-1.5312, lng:37.4822, year:2021, community:'Mutituni Group',                  beneficiaries:870,  desc:'Community-built sand dam with scooping hole, reducing fetch time by 4 hours/day.' },
-  { id:15,  images: imgs(0,1,2), name:'Machakos Solar Pipeline',  type:'Solar Pipeline', county:'Machakos', lat:-1.5177, lng:37.2634, year:2023, community:'Machakos Water Project',          beneficiaries:3200, desc:'2.5km solar pipeline connecting sand dam to a community distribution tap stand.' },
-  { id:16,  images: imgs(1,0,2), name:'Athi River Rock Catch.',   type:'Rock Catchment', county:'Machakos', lat:-1.4501, lng:36.9812, year:2019, community:'Athi River Women Group',          beneficiaries:280,  desc:'Rock catchment collecting runoff from Athi escarpment into 3 lined ponds.' },
-  { id:17,  images: imgs(2,1,0), name:'Iveti School Tank',        type:'School Tank',    county:'Machakos', lat:-1.5891, lng:37.3201, year:2024, community:'Iveti Primary School',            beneficiaries:290,  desc:'Two 10,000L tanks installed with first-flush diverter and mosquito proofing.' },
-  { id:18,  images: imgs(0,2,1), name:'Kabaa Sand Dam',           type:'Sand Dam',       county:'Machakos', lat:-1.4101, lng:37.4219, year:2022, community:'Kabaa Community Group',           beneficiaries:640,  desc:'Sand dam constructed using community-sourced rock and ASDF technical support.' },
-  { id:19,  images: imgs(1,2,0), name:'Yatta Shallow Well',       type:'Shallow Well',   county:'Machakos', lat:-1.1812, lng:37.5511, year:2020, community:'Yatta Farmers Group',             beneficiaries:380,  desc:'Well serving irrigated kitchen gardens along the Yatta Plateau edge.' },
-  { id:20,  images: imgs(2,0,1), name:'Mwala WASH Facility',      type:'WASH Facility',  county:'Machakos', lat:-1.5501, lng:37.3871, year:2023, community:'Mwala Community Group',           beneficiaries:520,  desc:'Community sanitation block with 8 doors, hand-slab slabs and HWTS demonstration.' },
-
-  // ── Kitui County ──
-  { id:21,  images: imgs(0,1,2), name:'Kitui Town Sand Dam',      type:'Sand Dam',       county:'Kitui', lat:-1.3662, lng:38.0166, year:2018, community:'Kitui North Cooperative',          beneficiaries:2200, desc:'Flagship sand dam demonstrating ASDF methodology — now a training site.' },
-  { id:22,  images: imgs(1,0,2), name:'Mwingi Solar Pipeline',    type:'Solar Pipeline', county:'Kitui', lat:-0.9361, lng:38.0643, year:2024, community:'Mwingi Water Project',             beneficiaries:1800, desc:'5km pipeline serving 6 villages, reducing walking distance from 9km to 0.5km.' },
-  { id:23,  images: imgs(2,1,0), name:'Mutomo Rock Catchment',    type:'Rock Catchment', county:'Kitui', lat:-1.8403, lng:38.2070, year:2020, community:'Mutomo Elders Council',            beneficiaries:340,  desc:'Granite rock outcrop channelling seasonal rain into cement-lined storage.' },
-  { id:24,  images: imgs(0,2,1), name:'Tseikuru Shallow Well',    type:'Shallow Well',   county:'Kitui', lat:-0.5812, lng:38.3122, year:2021, community:'Tseikuru Self-Help Group',          beneficiaries:460,  desc:'35m deep borehole with hand pump, installed alongside a sand dam structure.' },
-  { id:25,  images: imgs(1,2,0), name:'Kyuso Sand Dam',           type:'Sand Dam',       county:'Kitui', lat:-0.6901, lng:38.0411, year:2022, community:'Kyuso Community Water Group',      beneficiaries:980,  desc:'Sand dam built by 240 community members over 4 months using local materials.' },
-  { id:26,  images: imgs(2,0,1), name:'Zombe School Tank',        type:'School Tank',    county:'Kitui', lat:-1.5812, lng:38.1731, year:2023, community:'Zombe Secondary School',           beneficiaries:520,  desc:'80,000L tank system serving a boarding school of 520 students.' },
-  { id:27,  images: imgs(0,1,2), name:'Kabati WASH Unit',         type:'WASH Facility',  county:'Kitui', lat:-0.9712, lng:37.8344, year:2022, community:'Kabati Primary School',            beneficiaries:380,  desc:'Ventilated improved pit latrines and handwashing stations for 380 pupils.' },
-  { id:28,  images: imgs(1,0,2), name:'Nuu Sand Dam',             type:'Sand Dam',       county:'Kitui', lat:-1.6712, lng:38.3502, year:2019, community:'Nuu Women\'s Group',               beneficiaries:730,  desc:'Second cascade dam on Nuu river — multiplying upstream dam yield by 40%.' },
-  { id:29,  images: imgs(2,1,0), name:'Ngomeni Sand Dam',         type:'Sand Dam',       county:'Kitui', lat:-1.1201, lng:38.0812, year:2021, community:'Ngomeni Group',                    beneficiaries:860,  desc:'Sand dam constructed with local masonry skills developed through ASDF training.' },
-  { id:30,  images: imgs(0,2,1), name:'Mui Shallow Well',         type:'Shallow Well',   county:'Kitui', lat:-1.4412, lng:38.4211, year:2023, community:'Mui Valley Group',                 beneficiaries:275,  desc:'Hand-dug well reinforced with concrete rings, serving 275 households.' },
-  { id:31,  images: imgs(1,2,0), name:'Endau Rock Catchment',     type:'Rock Catchment', county:'Kitui', lat:-1.6012, lng:38.5022, year:2020, community:'Endau Elders Group',               beneficiaries:190,  desc:'Rock catchment with 3 linked storage tanks fed by natural granite hillside.' },
-  { id:32,  images: imgs(2,0,1), name:'Mumoni School Tank',       type:'School Tank',    county:'Kitui', lat:-0.8301, lng:38.1711, year:2024, community:'Mumoni Primary School',            beneficiaries:310,  desc:'25,000L tank improving hygiene and attendance at Mumoni Primary School.' },
-];
+// Build the working project list from the tracker data
+const PROJECTS = (window.ASDF_PROJECTS || []).map(p => ({
+  ...p,
+  images: imgsFor(p.id),
+}));
 
 // ── Count stats ──────────────────────────────────────────────────────
 function updateStats(visible) {
+  const by = t => visible.filter(p => p.type === t).length;
   document.getElementById('countAll').textContent  = visible.length;
-  document.getElementById('countDam').textContent  = visible.filter(p=>p.type==='Sand Dam').length;
-  document.getElementById('countWell').textContent = visible.filter(p=>p.type==='Shallow Well').length;
-  document.getElementById('countTank').textContent = visible.filter(p=>p.type==='School Tank').length;
-  document.getElementById('countSolar').textContent= visible.filter(p=>p.type==='Solar Pipeline').length;
-  document.getElementById('countWash').textContent = visible.filter(p=>p.type==='WASH Facility').length;
-  document.getElementById('countRock').textContent = visible.filter(p=>p.type==='Rock Catchment').length;
+  document.getElementById('countDam').textContent  = by('Sand Dam');
+  document.getElementById('countWell').textContent = by('Shallow Well');
+  document.getElementById('countTank').textContent = by('School Tank');
+  document.getElementById('countSolar').textContent= by('Solar Pipeline');
+  document.getElementById('countRock').textContent = by('Rock Catchment');
+  document.getElementById('countRoad').textContent = by('Road Crossing');
   document.getElementById('visibleCount').textContent = visible.length;
   document.getElementById('totalCount').textContent   = PROJECTS.length;
 }
@@ -69,10 +40,14 @@ function updateStats(visible) {
 // ── Custom circle marker ─────────────────────────────────────────────
 function makeMarker(project) {
   const color = TYPE_COLORS[project.type] || '#5e1062';
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="36" viewBox="0 0 28 36">
+  // Approximate-location markers are drawn hollow/dashed and faded so they read as estimates.
+  const inner = project.approx
+    ? `<circle cx="14" cy="14" r="6" fill="none" stroke="white" stroke-width="2.5" stroke-dasharray="3 2"/>`
+    : `<circle cx="14" cy="14" r="6" fill="white" opacity="0.9"/>`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="36" viewBox="0 0 28 36" style="${project.approx ? 'opacity:0.6' : ''}">
     <filter id="ds"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.35)"/></filter>
     <path d="M14 0C6.27 0 0 6.27 0 14c0 9.33 14 22 14 22S28 23.33 28 14C28 6.27 21.73 0 14 0z" fill="${color}" filter="url(#ds)"/>
-    <circle cx="14" cy="14" r="6" fill="white" opacity="0.9"/>
+    ${inner}
   </svg>`;
   return L.divIcon({
     html: svg,
@@ -84,52 +59,42 @@ function makeMarker(project) {
 }
 
 // ── Popup HTML ───────────────────────────────────────────────────────
+function metaItem(color, icon, label, value) {
+  return `<div class="popup-meta-item">
+      <span class="popup-meta-icon" style="background:${color}15;color:${color}">
+        <i class="fa-solid ${icon}"></i>
+      </span>
+      <div class="popup-meta-text">
+        <span class="meta-label">${label}</span>
+        <span class="meta-value">${value}</span>
+      </div>
+    </div>`;
+}
+
 function makePopup(p) {
   const color = TYPE_COLORS[p.type] || '#5e1062';
+  const items = [];
+  items.push(metaItem(color, 'fa-location-dot', 'County', `${p.county}`));
+  if (p.subcounty) items.push(metaItem(color, 'fa-map-pin', 'Sub-County', p.subcounty));
+  if (p.year)          items.push(metaItem(color, 'fa-calendar-days', 'Year Built', p.year));
+  if (p.beneficiaries) items.push(metaItem(color, 'fa-users', 'Beneficiaries', p.beneficiaries.toLocaleString()));
+  if (p.school)   items.push(metaItem(color, 'fa-school', 'School', p.school));
+  if (p.village)  items.push(metaItem(color, 'fa-house', 'Village', p.village));
+  if (p.donor)    items.push(metaItem(color, 'fa-hand-holding-heart', 'Funded by', p.donor));
+
+  const approxNote = p.approx
+    ? `<div class="popup-approx"><i class="fa-solid fa-circle-info"></i> Approximate location — placed at the community group's sand dam (exact tank GPS not yet recorded).</div>`
+    : '';
+
   return `<div class="map-popup">
     <div class="popup-type" style="background:${color}">
       <i class="fa-solid fa-droplet popup-type-icon"></i>${p.type}
     </div>
     <h4 class="popup-title">${p.name}</h4>
-    <p class="popup-desc">${p.desc}</p>
     <div class="popup-meta">
-      <div class="popup-meta-item">
-        <span class="popup-meta-icon" style="background:${color}15;color:${color}">
-          <i class="fa-solid fa-location-dot"></i>
-        </span>
-        <div class="popup-meta-text">
-          <span class="meta-label">County</span>
-          <span class="meta-value">${p.county}</span>
-        </div>
-      </div>
-      <div class="popup-meta-item">
-        <span class="popup-meta-icon" style="background:${color}15;color:${color}">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <div class="popup-meta-text">
-          <span class="meta-label">Beneficiaries</span>
-          <span class="meta-value">${p.beneficiaries.toLocaleString()}</span>
-        </div>
-      </div>
-      <div class="popup-meta-item">
-        <span class="popup-meta-icon" style="background:${color}15;color:${color}">
-          <i class="fa-solid fa-calendar-days"></i>
-        </span>
-        <div class="popup-meta-text">
-          <span class="meta-label">Year Built</span>
-          <span class="meta-value">${p.year}</span>
-        </div>
-      </div>
-      <div class="popup-meta-item">
-        <span class="popup-meta-icon" style="background:${color}15;color:${color}">
-          <i class="fa-solid fa-people-roof"></i>
-        </span>
-        <div class="popup-meta-text">
-          <span class="meta-label">Community</span>
-          <span class="meta-value">${p.community}</span>
-        </div>
-      </div>
+      ${items.join('')}
     </div>
+    ${approxNote}
     <div class="popup-footer">
       <button class="popup-photos-btn" style="background:${color}" onclick="openLightbox(${p.id})">
         <i class="fa-solid fa-images"></i>
@@ -141,11 +106,25 @@ function makePopup(p) {
 }
 
 // ── Project list card HTML ───────────────────────────────────────────
-function makeListCard(p, marker) {
+function makeListCard(p) {
   const color = TYPE_COLORS[p.type] || '#5e1062';
   const div = document.createElement('div');
   div.className = 'project-list-card';
   div.dataset.id = p.id;
+
+  // Second metric: beneficiaries if we have them, otherwise the sub-county/village
+  const metric2 = p.beneficiaries
+    ? `<span><i class="fa-solid fa-users" style="color:${color}"></i> ${p.beneficiaries.toLocaleString()}</span>`
+    : (p.subcounty ? `<span><i class="fa-solid fa-map-pin" style="color:${color}"></i> ${p.subcounty}</span>` : '');
+
+  const yearTag = p.year
+    ? `<span class="plc-year"><i class="fa-regular fa-calendar"></i> ${p.year}</span>`
+    : '';
+
+  const bottom = p.school
+    ? `<div class="plc-community"><i class="fa-solid fa-school" style="color:${color}"></i><span>${p.school}</span></div>`
+    : (p.donor ? `<div class="plc-community"><i class="fa-solid fa-hand-holding-heart" style="color:${color}"></i><span>${p.donor}</span></div>` : '');
+
   div.innerHTML = `
     <div class="plc-type-bar" style="background:${color}"></div>
     <div class="plc-body">
@@ -153,32 +132,34 @@ function makeListCard(p, marker) {
         <span class="plc-badge" style="color:${color};border-color:${color}">
           <i class="fa-solid fa-droplet plc-badge-icon"></i>${p.type}
         </span>
-        <span class="plc-year"><i class="fa-regular fa-calendar"></i> ${p.year}</span>
+        ${yearTag}
       </div>
-      <h4 class="plc-title">${p.name}</h4>
+      <h4 class="plc-title">${p.name}${p.approx ? ' <span class="plc-approx-tag"><i class="fa-solid fa-circle-info"></i>approx</span>' : ''}</h4>
       <div class="plc-meta">
         <span><i class="fa-solid fa-location-dot" style="color:${color}"></i> ${p.county}</span>
-        <span><i class="fa-solid fa-users" style="color:${color}"></i> ${p.beneficiaries.toLocaleString()}</span>
+        ${metric2}
       </div>
-      <div class="plc-community">
-        <i class="fa-solid fa-people-roof" style="color:${color}"></i>
-        <span>${p.community}</span>
-      </div>
+      ${bottom}
     </div>`;
-  div.addEventListener('click', () => {
-    marker.openPopup();
-    map.setView([p.lat, p.lng], 13, { animate: true });
-    document.querySelectorAll('.project-list-card').forEach(c => c.classList.remove('active'));
-    div.classList.add('active');
-    div.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  });
+
+  div.addEventListener('click', () => focusProject(p, div));
   return div;
 }
 
 // ── Map init ─────────────────────────────────────────────────────────
 let map;
-let allMarkers = {}; // id → L.marker
+let clusterGroup;
+let allMarkers = {};   // id → L.marker
 let allListCards = {}; // id → DOM element
+
+function focusProject(p, card) {
+  const marker = allMarkers[p.id];
+  document.querySelectorAll('.project-list-card').forEach(c => c.classList.remove('active'));
+  if (card) { card.classList.add('active'); card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+  if (!marker) return;
+  // Reveal the marker (it may be inside a cluster) then open its popup
+  clusterGroup.zoomToShowLayer(marker, () => marker.openPopup());
+}
 
 function initMap() {
   map = L.map('projectsMap', {
@@ -202,11 +183,29 @@ function initMap() {
   L.rectangle([[-1.65, 36.85], [-0.85, 37.72]], countyStyles).addTo(map).bindTooltip('Machakos County', {sticky:true});
   L.rectangle([[-1.90, 37.72], [-0.40, 38.70]], countyStyles).addTo(map).bindTooltip('Kitui County', {sticky:true});
 
-  // Place all markers
+  // Marker cluster group (handles ~1,800 markers smoothly)
+  clusterGroup = L.markerClusterGroup({
+    chunkedLoading: true,
+    maxClusterRadius: 55,
+    spiderfyOnMaxZoom: true,
+    showCoverageOnHover: false,
+    iconCreateFunction: cluster => {
+      const n = cluster.getChildCount();
+      const size = n < 25 ? 40 : n < 100 ? 48 : 58;
+      return L.divIcon({
+        html: `<div class="asdf-cluster"><span>${n}</span></div>`,
+        className: 'asdf-cluster-wrap',
+        iconSize: [size, size],
+      });
+    },
+  });
+  map.addLayer(clusterGroup);
+
+  // Build markers + list cards
   const listEl = document.getElementById('projectList');
+  const frag = document.createDocumentFragment();
   PROJECTS.forEach(p => {
     const marker = L.marker([p.lat, p.lng], { icon: makeMarker(p) })
-      .addTo(map)
       .bindPopup(makePopup(p), { maxWidth: 280, className: 'asdf-popup' });
 
     marker.on('click', () => {
@@ -219,12 +218,24 @@ function initMap() {
     });
 
     allMarkers[p.id] = marker;
-    const card = makeListCard(p, marker);
+    const card = makeListCard(p);
     allListCards[p.id] = card;
-    listEl.appendChild(card);
+    frag.appendChild(card);
   });
+  listEl.appendChild(frag);
 
+  clusterGroup.addLayers(Object.values(allMarkers));
   updateStats(PROJECTS);
+  buildYearOptions();
+}
+
+// ── Dynamic year dropdown (built from the data) ───────────────────────
+function buildYearOptions() {
+  const sel = document.getElementById('filterYear');
+  if (!sel) return;
+  const years = [...new Set(PROJECTS.map(p => p.year).filter(Boolean))].sort((a, b) => b - a);
+  sel.innerHTML = '<option value="all">All Years</option>' +
+    years.map(y => `<option value="${y}">${y}</option>`).join('');
 }
 
 // ── Filter logic ──────────────────────────────────────────────────────
@@ -241,22 +252,26 @@ function applyFilters() {
   const filtered = PROJECTS.filter(p => {
     const matchType   = types.includes(p.type);
     const matchCounty = activeCounty === 'all' || p.county === activeCounty;
-    const matchYear   = activeYear   === 'all' || (activeYear === '2018' ? p.year <= 2018 : p.year === parseInt(activeYear));
-    const matchSearch = !searchQuery  || p.name.toLowerCase().includes(searchQuery) || p.community.toLowerCase().includes(searchQuery) || p.county.toLowerCase().includes(searchQuery);
+    const matchYear   = activeYear   === 'all' || p.year === parseInt(activeYear);
+    const matchSearch = !searchQuery ||
+      p.name.toLowerCase().includes(searchQuery) ||
+      (p.donor && p.donor.toLowerCase().includes(searchQuery)) ||
+      (p.village && p.village.toLowerCase().includes(searchQuery)) ||
+      (p.subcounty && p.subcounty.toLowerCase().includes(searchQuery)) ||
+      (p.school && p.school.toLowerCase().includes(searchQuery)) ||
+      p.county.toLowerCase().includes(searchQuery);
     return matchType && matchCounty && matchYear && matchSearch;
   });
 
   const visibleIds = new Set(filtered.map(p => p.id));
 
-  // Show/hide markers
+  // Rebuild the cluster with only the visible markers
+  clusterGroup.clearLayers();
+  clusterGroup.addLayers(filtered.map(p => allMarkers[p.id]));
+
+  // Show/hide list cards
   PROJECTS.forEach(p => {
-    if (visibleIds.has(p.id)) {
-      if (!map.hasLayer(allMarkers[p.id])) allMarkers[p.id].addTo(map);
-      allListCards[p.id].style.display = '';
-    } else {
-      if (map.hasLayer(allMarkers[p.id])) map.removeLayer(allMarkers[p.id]);
-      allListCards[p.id].style.display = 'none';
-    }
+    allListCards[p.id].style.display = visibleIds.has(p.id) ? '' : 'none';
   });
 
   updateStats(filtered);
@@ -414,10 +429,10 @@ function lbShow() {
   });
 
   // Meta
-  document.getElementById('lbMeta').innerHTML = `
-    <span><i class="fa-solid fa-location-dot" style="color:${color}"></i> ${p.county} County</span>
-    <span><i class="fa-solid fa-users" style="color:${color}"></i> ${p.beneficiaries.toLocaleString()} beneficiaries</span>
-    <span><i class="fa-solid fa-calendar-days" style="color:${color}"></i> Built ${p.year}</span>`;
+  const metaBits = [`<span><i class="fa-solid fa-location-dot" style="color:${color}"></i> ${p.county} County</span>`];
+  if (p.beneficiaries) metaBits.push(`<span><i class="fa-solid fa-users" style="color:${color}"></i> ${p.beneficiaries.toLocaleString()} beneficiaries</span>`);
+  if (p.year)          metaBits.push(`<span><i class="fa-solid fa-calendar-days" style="color:${color}"></i> Built ${p.year}</span>`);
+  document.getElementById('lbMeta').innerHTML = metaBits.join('');
 
   // Arrow visibility
   document.getElementById('lbPrev').style.display = p.images.length > 1 ? '' : 'none';

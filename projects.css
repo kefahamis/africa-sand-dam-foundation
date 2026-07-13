@@ -827,3 +827,52 @@ body.lb-open { overflow: hidden; }
   }
   .stat-pill { font-size: 11px; padding: 4px 9px; }
 }
+
+/* ── Marker clusters ─────────────────────────────────────────────── */
+.asdf-cluster-wrap { background: transparent; }
+.asdf-cluster {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: rgba(94, 16, 98, 0.85);
+  border: 3px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease;
+}
+.asdf-cluster span { font-size: 13px; line-height: 1; }
+.asdf-cluster-wrap:hover .asdf-cluster { transform: scale(1.08); }
+/* Neutralise the plugin's default cluster look so ours shows through */
+.marker-cluster, .marker-cluster div { background: transparent !important; }
+.marker-cluster { border: none !important; }
+
+/* ── Approximate-location note (popup) ───────────────────────────── */
+.popup-approx {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #7f55390f;
+  border: 1px dashed #7f5539;
+  color: #6b4a30;
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+.popup-approx i { margin-right: 5px; }
+.plc-approx-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  border: 1px dashed #7f5539;
+  color: #7f5539;
+  font-size: 10px;
+  font-weight: 600;
+  vertical-align: middle;
+}
